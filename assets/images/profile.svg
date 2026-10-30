@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="halo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e2ba9b"/>
+      <stop offset="100%" stop-color="#cf9f7e"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="lapel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="180" r="160" fill="url(#glow)"/>
+
+  <!-- Subtle Studio Rim Light Behind Head -->
+  <circle cx="200" cy="170" r="100" fill="none" stroke="url(#halo)" stroke-width="2" opacity="0.3"/>
+
+  <!-- Shoulders & Suit Jacket -->
+  <path d="M70 400 C80 320, 120 280, 160 270 L200 310 L240 270 C280 280, 320 320, 330 400 Z" fill="url(#suit)" filter="url(#softShadow)"/>
+
+  <!-- White Dress Shirt Collar -->
+  <path d="M165 260 L200 305 L235 260 L220 240 L200 250 L180 240 Z" fill="#f8fafc"/>
+  <path d="M196 250 L200 310 L204 250 Z" fill="#e2e8f0"/>
+
+  <!-- Suit Lapels -->
+  <path d="M140 275 L180 240 L195 295 L160 380 Z" fill="url(#lapel)" opacity="0.8"/>
+  <path d="M260 275 L220 240 L205 295 L240 380 Z" fill="url(#lapel)" opacity="0.8"/>
+
+  <!-- Neck -->
+  <path d="M176 215 L224 215 L224 255 L200 268 L176 255 Z" fill="url(#skin)"/>
+  <path d="M176 240 C190 255, 210 255, 224 240 L224 255 L200 268 L176 255 Z" fill="#000000" opacity="0.12"/>
+
+  <!-- Head Base -->
+  <path d="M150 170 C150 120, 170 95, 200 95 C230 95, 250 120, 250 170 C250 215, 225 240, 200 240 C175 240, 150 215, 150 170 Z" fill="url(#skin)" filter="url(#softShadow)"/>
+
+  <!-- Ears -->
+  <ellipse cx="148" cy="172" rx="7" ry="14" fill="#cf9f7e"/>
+  <ellipse cx="252" cy="172" rx="7" ry="14" fill="#cf9f7e"/>
+
+  <!-- Styled Hair -->
+  <path d="M145 155 C142 120, 160 80, 200 78 C240 76, 258 115, 255 155 C248 135, 240 125, 225 125 C205 125, 195 110, 175 115 C160 120, 150 135, 145 155 Z" fill="#18181b"/>
+  <!-- Hair Volume / Strands -->
+  <path d="M152 135 C165 95, 190 85, 215 85 C235 85, 250 95, 253 125 C245 110, 230 102, 215 102 C195 102, 175 112, 162 130 Z" fill="#27272a"/>
+
+  <!-- Eyebrows -->
+  <path d="M165 152 Q177 148 188 152" stroke="#18181b" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M212 152 Q223 148 235 152" stroke="#18181b" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyes -->
+  <ellipse cx="177" cy="164" rx="5" ry="3.5" fill="#18181b"/>
+  <ellipse cx="223" cy="164" rx="5" ry="3.5" fill="#18181b"/>
+  <circle cx="178" cy="163" r="1.2" fill="#ffffff"/>
+  <circle cx="224" cy="163" r="1.2" fill="#ffffff"/>
+
+  <!-- Glasses (sleek modern researcher frames) -->
+  <rect x="162" y="153" width="30" height="22" rx="6" fill="none" stroke="#475569" stroke-width="2"/>
+  <rect x="208" y="153" width="30" height="22" rx="6" fill="none" stroke="#475569" stroke-width="2"/>
+  <path d="M192 162 L208 162" stroke="#475569" stroke-width="2"/>
+  <path d="M162 161 L150 159" stroke="#475569" stroke-width="2"/>
+  <path d="M238 161 L250 159" stroke="#475569" stroke-width="2"/>
+
+  <!-- Nose -->
+  <path d="M200 162 L198 184 L204 186" stroke="#b08466" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Confident Smile -->
+  <path d="M185 204 Q200 215 215 204" stroke="#8c5844" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Subtle Rim Light on Face Edge -->
+  <path d="M246 145 C250 165, 245 190, 235 210" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+</svg>

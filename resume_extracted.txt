@@ -1,0 +1,270 @@
+
+
+C-110, Garud Marg, Hanuman Nagar, 
+Vaishali Nagar,
+Jaipur - 302021
+Shreeansh Bansal
+           shreeansh0479@gmail.com
++91 9783088231
+21.11.2008
+
+EDUCATION
+Jayshree Periwal International School, Jaipur, Rajasthan   2025-2027
+IBDP: HL: Math AA, Economics, Physics, Chemistry; SL: English, Hindi B
+
+The Doon School, Dehradun, Uttarakhand 2021 – 2025
+
+ACADEMIC PROGRAMMES
+Berkeley M.E.T. Innovation Academy, UC Berkeley, California    June 2026
+A selective three-week residential program jointly offered by UC Berkeley's College of Engineering and Haas School of Business, integrating engineering, entrepreneurship, product development, and venture creation.
+Developed ClearCall, an AI-powered sports officiating and analytics startup, progressing from customer discovery and problem identification to a functional MVP and investor-ready business pitch.
+Built prototypes at Berkeley's Jacobs Institute for Design Innovation, applying design thinking, rapid prototyping, CAD, 3D printing, and iterative engineering design methodologies.
+Studied technology entrepreneurship under Prof. Saikat Chaudhuri, covering startup ideation, customer discovery, business models, product strategy, venture creation, and technology commercialization.
+Learned customer validation using The Mom Test, conducted market research, SWOT analysis, competitive positioning, and business model development for startup validation.
+Attended masterclasses by Michael Grimes (Morgan Stanley) on IPOs, Prof. Mark Mueller (HiPeR Lab), Prof. Matt DeJong, Prof. Lydia Sohn, Caroline Winnett (Executive Director, Berkeley SkyDeck), and Silicon Valley founders and entrepreneurs.
+Presented and defended the venture before a panel of investors and entrepreneurship leaders during Berkeley M.E.T.'s "Shark Tank" startup showcase, incorporating technical, product, and commercial perspectives.
+Collaborated with an international cohort of high-achieving students while refining leadership, cross-disciplinary teamwork, engineering communication, and entrepreneurial decision-making.
+
+Young Technology Scholars, Plaksha University, Chandigarh                              May 2025
+A selective two-week residential engineering program emphasizing interdisciplinary problem-solving through electronics, embedded systems, programming, prototyping, and real-world product development.
+Designed and developed an IoT-Based Intelligent Weather Station (IWS) integrating Arduino, DHT22, MQ-135, Hall Effect Sensor, and Rotary Encoder with a real-time dashboard for environmental monitoring, sensor visualization, and data-driven analysis.
+Calibrated environmental sensors using a wind tunnel to improve measurement accuracy, validating system performance through iterative testing, experimental analysis, and engineering optimization.
+Applied electronics, embedded systems, Python programming, microcontroller interfacing, IoT architecture, and sensor integration through intensive laboratory coursework and a team-based engineering capstone.
+Learned from distinguished faculty including Dr. Ravi Jasuja (Founder, Plaksha University; Harvard Medical School), Prof. Ravinder Dahiya (Northeastern University), Prof. R.K. Pant (IIT Bombay), Dr. Andy Ruina (Brown University), Dr. Shashikant Pawar, and Dr. Arshdeep Sidhu, through lectures on engineering innovation, embedded systems, design thinking, and interdisciplinary technology.
+Presented the completed prototype and technical findings on Demo Day, demonstrating the system architecture, sensor calibration methodology, engineering design decisions, and real-world applications before Plaksha faculty and peers.
+
+Artificial Intelligence for Young Achievers (AIYA), National University of Singapore        December 2023
+A selective two-week residential program focused on Artificial Intelligence, Machine Learning, and Cloud Computing through advanced coursework, industry projects, and collaborative research.
+Developed an end-to-end Customer Churn Prediction system for a telecommunications company using Python, performing data preprocessing, feature engineering, exploratory data analysis, model evaluation, and predictive analytics to achieve 99% prediction accuracy with an international team. 
+Studied Artificial Intelligence, Machine Learning, Neural Networks, Natural Language Processing (NLP), Computer Vision, Evolutionary Algorithms, Bayesian Networks, and Machine Learning pipelines under Dr. Manoranjan Dash, AI researcher and former faculty at the National University of Singapore and Nanyang Technological University. 
+Built and benchmarked machine learning models including Logistic Regression, Decision Trees, Random Forest, Gradient Boosting, Support Vector Machines, K-Nearest Neighbours, Principal Component Analysis (PCA), Artificial Neural Networks, and Convolutional Neural Networks, utilizing scikit-learn, TensorFlow, and Keras. 
+Learned AWS Cloud Computing and AI deployment workflows from Mustafa Saifee (Amazon Web Services Developer Advocate), gaining hands-on exposure to Amazon SageMaker, S3, Rekognition, Lex, Polly, Textract, Translate, Git/GitHub, and cloud-native AI application development. 
+Recognized as a Top Achiever of the program and awarded a Letter of Recommendation by Dr. Manoranjan Dash for outstanding technical performance, project execution, and collaborative leadership. 
+
+ONLINE COURSES (via Coursera & Edx)
+CS50: Introduction to Computer Science by Harvard University2025
+Supervised Machine Learning: Regression and Classification, Stanford University                         2024
+Computational Thinking for Problem Solving, UPenn2024
+Mathematical Thinking, Stanford University2024
+
+INNOVATION & VENTURE PORTFOLIO
+Founder, AeriSense                                                 March 2025 – Present
+An AI-powered affordable IoT solution for precision livestock monitoring, enabling farmers to improve animal welfare, optimize biogas potential, and make data-driven decisions while advancing sustainable agriculture and environmental stewardship. 
+Conceived, designed, and engineered an end-to-end IoT platform integrating ESP32 with 8+ environmental sensors to continuously monitor methane (CH₄), ammonia (NH₃), carbon dioxide (CO₂), hydrogen sulphide (H₂S), temperature, humidity, VOCs, and air quality, transforming complex environmental data into actionable insights for livestock management and renewable energy assessment.
+Visited 150+ livestock farms across 17 cities in Rajasthan, conducting extensive stakeholder interviews with farmers and veterinarians, and piloting the system on 14 farms to ensure the technology addressed real operational challenges rather than laboratory assumptions.
+Built and analysed multi-season environmental datasets spanning summer, monsoon, and winter, applying statistical modelling and data analytics to identify greenhouse gas emission trends, environmental risk factors, and opportunities to improve farm sustainability, livestock health, and biogas generation.
+Authored and presented a peer-reviewed research paper accepted at the Springer’s ICT4SD Conference, demonstrating how low-cost IoT technologies can make precision livestock monitoring accessible to resource-constrained farms while supporting climate-smart agriculture and circular economy initiatives.
+The project has also been featured in The Times of India, Dainik Bhaskar, and Rajasthan Patrika, highlighting its innovation and potential environmental impact.
+
+Founder, BeeWise                                            January 2024 – Present
+An AI-enabled precision apiculture platform integrating embedded systems, IoT sensing, and computational modelling to help beekeepers predict colony collapse, reduce overwintering losses, and improve pollinator conservation through data-driven hive management.
+Engineered a fully integrated smart beehive monitoring system combining ESP32, 2× MQ-9 gas sensors, 2× DHT22 temperature–humidity sensors, and 2× HX711 load-cell weight sensors to continuously track CO₂, CO, methane, internal and ambient hive conditions, and colony weight, creating a real-time digital representation of colony health that enables early detection of environmental stress and declining hive conditions.
+Developed a Monte Carlo–based predictive modelling framework for Apis mellifera colonies by integrating stochastic biological processes with real-world temperature humidity time-series data, enabling probabilistic forecasting of overwintering survival before colony failure becomes observable.
+Built a decision-support engine modelling the interaction between cold exposure, honey reserves, hive weight dynamics, gas concentrations, and colony thermoregulation, allowing beekeepers to identify high-risk colonies early, optimise intervention strategies, and minimise avoidable colony losses.
+Designed the complete analytical pipeline in Python, implementing stochastic simulation, environmental data processing, statistical sensitivity analysis, and large-scale computational experiments to evaluate thousands of environmental scenarios, transforming complex ecological processes into actionable management insights.
+Combined embedded systems, artificial intelligence, computational ecology, environmental sensing, and data science into a scalable precision-apiculture platform with the potential to improve pollinator health, strengthen food-security ecosystems through healthier pollination services, and make predictive hive monitoring accessible to researchers and beekeepers alike.
+
+Founder, SignBridge                                 March 2025 – Present
+An AI-powered accessibility platform recognised by Apple through the Swift Student Challenge, leveraging computer vision, deep learning, and multilingual speech technologies to translate sign language into real-time text and speech, enabling inclusive communication and greater independence for Deaf and hard-of-hearing individuals.
+Designed and developed an end-to-end AI-powered sign language translation system using computer vision, deep learning, and Python, recognising hand gestures in real time and converting them into instant text and natural-sounding speech to eliminate communication barriers in everyday interactions.
+Engineered a complete machine learning pipeline incorporating gesture detection, image preprocessing, feature extraction, neural network inference, multilingual language translation, and text-to-speech synthesis, enabling recognised signs to be instantly translated and spoken in multiple languages for seamless cross-lingual communication.
+Built the platform for deployment across airports, hospitals, government offices, retail environments, educational institutions, and customer-service settings, reducing reliance on human interpreters and empowering Deaf and hard-of-hearing individuals to communicate more independently in critical public spaces.
+Developed a scalable software architecture supporting expansion to additional sign languages, regional dialects, and multilingual datasets, creating a foundation for globally deployable accessibility solutions powered by artificial intelligence.
+Combined artificial intelligence, computer vision, natural language processing, multilingual translation, and human-centred design into a scalable assistive technology platform advancing accessibility, digital inclusion, and equitable communication for Deaf and hard-of-hearing communities worldwide.
+
+Co-Founder & Chief Technology Officer, Clearcall             June 2026 – Present
+An AI-powered sports technology venture developed at the UC Berkeley M.E.T. Innovation Academy, leveraging computer vision, edge AI, and real-time analytics to automate sports officiating, improve decision accuracy, and democratise professional-grade match analysis for schools, colleges, and amateur sports organisations.
+Architected and developed an end-to-end AI officiating platform using YOLO11, ByteTrack, OpenCV, Flask, and Python, enabling real-time player and ball tracking, automated rule enforcement, instant replay generation, and live performance analytics from standard video feeds.
+Engineered a high-performance edge-computing pipeline capable of low-latency local inference, eliminating dependence on expensive proprietary systems while making AI-powered officiating accessible to resource-constrained sporting organisations.
+Built intelligent officiating modules for out-of-bounds detection, sprint-speed analysis, player tracking, replay generation, bird's-eye visualisation, event timelines, and live analytics dashboards, transforming raw match footage into actionable insights for referees, coaches, athletes, and spectators.
+Led the platform's technical architecture by integrating computer vision, multi-object tracking, spatial analytics, rule-based AI, and interactive web technologies into a scalable system designed for future expansion toward automated offside detection, goal-line technology, multi-camera officiating, and advanced sports analytics.
+Presented the venture to venture capital investors, startup founders, Berkeley faculty, and executives and mentors from leading accelerator programmes, including Berkeley SkyDeck, incorporating expert technical and commercial feedback to strengthen the platform's architecture, product strategy, scalability, and market positioning.
+
+Founder, AcousticAI                    January 2023 – Present
+An AI-powered acoustic intelligence platform inspired by award-winning physics research, transforming sound into predictive insights through digital signal processing and machine learning for applications in intelligent sensing, industrial quality control, and future healthcare diagnostics.
+Transformed an award-winning experimental physics investigation into a scalable AI-powered acoustic inference platform, replacing analytical curve fitting with machine learning models capable of estimating concealed physical characteristics directly from acoustic signatures. 
+Collaborated with Dr. Manoranjan Dash, a leading AI researcher, to design and optimise predictive machine learning algorithms achieving 99.3% accuracy in estimating object quantities within enclosed containers using only sound recordings. 
+Developed a complete software pipeline integrating digital signal processing, feature extraction, supervised machine learning, and statistical modelling, converting raw acoustic signals into accurate real-time predictive outputs. 
+Demonstrated that the underlying methodology generalises beyond matchboxes to different enclosed objects, establishing a framework for non-destructive testing, automated quality inspection, inventory verification, and intelligent acoustic sensing. 
+Established the foundation for extending AI-driven acoustic inference to future applications in healthcare diagnostics, where models trained on characteristic signal patterns could assist in identifying subtle abnormalities within medical datasets alongside broader industrial sensing applications. 
+
+INTERSHIPS/WORK EXPERIENCE
+Sustainability Research & CSR Strategy Intern, One Step Greener, Remote    June 2026
+A sustainability and circular economy organisation founded by Nav Agarwal (Stanford University; International Children's Peace Prize recipient), developing scalable solutions in waste management, climate innovation, eco-restoration, and corporate sustainability.
+Built a centralized CSR intelligence database covering 200+ leading Indian corporations, analysing CSR expenditure, ESG priorities, SDG alignment, sustainability focus areas, implementation partners, geographies, and climate initiatives to support long-term fundraising and partnership strategy.
+Conducted research on carbon credits, plastic waste management, Extended Producer Responsibility (EPR), circular economy models, and climate finance, synthesizing technical and policy insights to strengthen sustainability project development.
+Developed a structured fit-scoring framework to evaluate and shortlist 30–50 high-potential corporate partners, aligning funding priorities with One Step Greener's initiatives in waste management, circular economy, and ecosystem restoration.
+Performed decision-maker mapping across 50+ corporations, identifying CSR Heads, Sustainability Directors, Foundation Leaders, and key executives while creating customized outreach strategies and partnership briefs for priority organizations.
+Delivered a scalable fundraising intelligence system, including verified corporate research, outreach frameworks, and strategic recommendations, to support 2–3 years of corporate partnership development and CSR engagement.
+
+Summer School Teaching Assistant, Young Technology Scholars, Plaksha University, On Site     May 2026
+Selected as a Teaching Assistant for Plaksha University's flagship Young Technology Scholars (YTS) programme after participating as a student in 2025, supporting faculty in delivering one of India's leading STEM residential summer programmes for high school students.
+Selected by the YTS faculty to return as a Teaching Assistant based on outstanding technical performance, teamwork, and leadership demonstrated during the 2025 cohort. 
+Mentored and supported student team throughout the programmer, teaching core concepts in electronics, embedded systems, programming, hardware integration, and engineering design while assisting with laboratory sessions and troubleshooting. 
+Designed lesson plans guided practical experiments clarified technical doubts and helped students translate theoretical concepts into working engineering prototypes. 
+Contributed 120+ hours towards the development of a robotic hand incorporating custom built strain sensors, participating in hardware designs, sensor integration, calibration, testing, and iterative prototyping alongside the instructional team. 
+Worked closely with faculty and fellow Teaching Assistants to ensure smooth execution of workshops, laboratory activities, project reviews, and hands-on engineering sessions.
+
+Biodiversity Monitoring & Conservation Intern, Forest Department of Jaisalmer, Rajasthan    July 2025
+A government conservation internship with the Forest Department of Rajasthan, working alongside forest officers, wildlife experts, and conservation professionals on biodiversity assessment, habitat monitoring, and ecosystem management across the Thar Desert.
+Conducted 25+ field biodiversity surveys across protected forests and surrounding ecosystems, collecting ecological data to support wildlife conservation, habitat assessment, and sustainable ecosystem management.
+Identified, documented, and analysed 80+ species of flora and fauna, contributing to biodiversity monitoring, species distribution studies, and environmental research within the Thar Desert landscape.
+Applied field ecology techniques, including species identification, habitat assessment, biodiversity documentation, GPS-based field observations, and environmental data collection under the guidance of Forest Department officials and conservation specialists.
+Collaborated with forest officers and conservation experts to evaluate ecosystem health, understand regional conservation challenges, and support habitat preservation and ecological restoration initiatives.
+Strengthened practical knowledge of wildlife conservation, desert ecology, biodiversity management, environmental policy implementation, and government-led conservation practices through immersive fieldwork and stakeholder engagement.
+
+
+SCHOLASTIC ACHIEVEMENTS
+Top 300 (Research Distinction), Global Research Challenge by Synthica & NSRI (for AeriSense)2026
+Distinction (World Rank 1), Avogadro Chemistry Contest by University of Waterloo2026
+Distinction, Fermat Maths Contest by University of Waterloo2026
+Research Paper Accepted, Springer LNNS Publication (for AeriSense)2026
+Gold, Thailand International Mathematics Olympiad2026
+Indian Delegation, London International Youth Science Forum at Imperial College, London(for AeriSense)             2026
+Crest Gold Award, British Science Association (for AeriSense)2026
+Top 350 (out of ~5000 entries), WWDC Swift Challenge by Apple (for SignBridge)2026
+Finalist, Sigma Xi Student Research Showcase (for AeriSense)2026
+Top 100 (out of 23,000 applicants), Blue Ocean Student Entrepreneur Competition (for AeriSense)2026
+Finalist, Genius Olympiad for AeriSense (for AeriSense)2026
+National Qualifiers, International Economics Olympiad2026
+Silver, Fermat Mathematics Olympiad2025
+Gold, UK Math Trust Senior Olympiad2025
+Distinction, Sir Issac Newton Physics Contest2025
+Top 30 Teams, Youth Ideathon (ThinkStartup @ IIT Delhi)2025
+Conrad Innovator, The Conrad Challenge (For AeriSense)2025
+Top 50 Submissions, BL4S by CERN 2025
+Top 10% in International Round, iCode Global Hackathon2025
+Gold, Hong Kong International Mathematics Olympiad                2025
+Top 250, Blue Ocean Student Entrepreneurs Competition (NeuroLearn)2025
+Winner, Ideathon 7.0 SCInTfic 2k24 IITNR2025
+Winner, Young Innovator TechFest IIT Bombay2024
+Shortlisted, John Locke Essay Competition (Economics)2024
+Gold, Thailand International Mathematics Olympiad               2024
+Circular Economy Solution Award, BIEA Stem Competition 2024
+Honourable Mention ($50), Blue Ocean Awareness Contest (Creative Writing)2024
+Runners Up, International Space Settlement Design Competition Held at Kennedy Space Centre, Florida              2024
+Honourable Mention, Young Entrepreneurship Conference2024
+Winner, Alpha Science Competition (Physics Fight)2024
+First Runner Up, Techniche’23 by IIT Guwahati2023
+Winner, Dipankar Sen Science Quiz2023
+Winner, B.G. Pitre Science Fiction Story Contest2023
+Runners Up, Tata Building Essay Writing Competition2023
+Merit, Trinity Grade 4 Speech and Drama2023
+
+LEADERSHIP RESPONSIBILITIES/ROLES
+Chief Technology Officer (CTO), BizForHer              2026-27
+Leading technology for BizForHer, a student-led business case competition platform backed by NITI Aayog that encourages and supports young women with ideas; reached 20,000+ individuals across 25 states and raised $2.5M+ in scholarships/cash/funding
+Building and maintaining the BizForHer website and a dedicated competition-hosting platform (applications, round management, submissions) and am developing an AI bot that delivers a pre-competition entrepreneurship course and participant support.
+Deputy House Captain, Jayshree Periwal International School, Jaipur       2025-26
+Leading a school community of 3,300+ students, representing house interests and supporting student welfare, discipline, and engagement initiatives.
+Organized and executed interschool events - coordinating logistics, teams, and timelines to drive participation and smooth operations.
+Kashmir House Representative, The School Council (Student Government), The Doon School                               2023-24
+Represented 90+ students from Kashmir House in weekly council meetings, voicing concerns and driving actionable changes in academics, discipline, and campus life.
+Collaborated with school leadership to implement student-led initiatives and improvement of boarding facilities.
+Vice President Engineering, International Space Settlement Design Competition (Kennedy Space Centre, Florida) 2024
+Led 60+ students across multidisciplinary engineering departments to make an integrated space settlement design in a 48-hour simulation.
+Directed technical strategy and ensured full compliance with the Request for Proposal (RFP), aligning engineering decisions with executive leadership on feasibility, risk mitigation, budget, and timeline.
+Technical Member (Web Development & Event Operations), MetroHacks 2023
+A student-run international hackathon supported by industry partners including Cathay Bank and Texas Instruments, bringing together thousands of student innovators worldwide.
+Built and maintained the official hackathon website using HTML, CSS, JavaScript, and responsive web development principles, ensuring a seamless experience for participants, mentors, judges, and organisers. 
+Supported technical operations and event logistics for an international hackathon involving 2,500+ participants from over 30 countries, contributing to the successful execution of registrations, communications, and competition workflows. 
+Collaborated with an international organising team to improve website functionality, troubleshoot technical issues, and enhance participant engagement throughout the event. 
+Helped deliver a global innovation competition featuring over US$150,000 in prizes, connecting students with industry mentors, sponsors, and technology leaders.
+
+STEM RELATED ACTIVITIES
+Team Leader, BIEA STEM Competition 2024
+Led a 3-month collaboration of 5 members to design ‘Fibre Fusion’, a sustainable fabric aimed at addressing the environmental damage caused by fast fashion. Managed weekly team meetings, project tasks, and 3D prototype development.
+Represented The Doon School at London for final round, driving the project to win the BIEA Circular Economy Solution Award for its impactful contribution to sustainability. 
+Core Team, Nest Society (Science Club), The Doon School              2022-25      
+Conducted Society meetings every week for 100+ students on research and innovation.
+Planned and organised Research Drive in school for 2 consecutive years where junior students could work on a research paper in field of their interest with a mentor from senior grades.
+Designed a working sustainability farm model featuring drip irrigation, wind powered electricity, and eco-engineering solutions. 
+Member, Infinity Society, The Doon School                                           2022-25
+Conducted weekly society meetings on diverse mathematical topics such as number theory, combinatorics, and logical reasoning to promote mathematical curiosity among the Doon School community. 
+Played a key role in organising and managing event like Pi Day, Math week, and Sigma (Inter-school maths competition) for 600+ students and 20 schools. 
+
+PUBLIC SPEAKING (MUN & DEBATE)
+Secretariat Member, The Doon School Model United Nations Conference                       2023-25
+Selected as part of a 15-member core team to organize Asia’s largest student-run MUN conference
+Coordinated end-to-end logistics to ensure the seamless execution of a 3-day conference with 700+ delegates.
+Managed a ₹60 lakh budget, liaising with participating schools.
+Delegate, Oxford Model United Nations Conference – WHO Committee2023
+Represented Indonesia in the World Health Organization committee engaging in debate on antibiotic resistance.
+Conducted in-depth policy research and highlighted regional concerns, contributing actively to negotiations and co-authoring a working paper on global strategies to combat antimicrobial resistance.
+Core Debater, Bharat Vaani Society - The Doon School’s Senior Hindi Debating Society       2022-25 
+Represented the school in inter-school debates and secured various Best Speaker awards.
+Mentored 40+ junior debaters by organising weekly workshops and meetings on debating.
+
+JOURNALISM/WRITING
+Senior Editor, Young Scientist Journal                              2026 Reviewing and Editing Articles in the computer science department of the largest student run high school research journal. 
+Senior Editor, The Infinity, The Doon School’s Mathematics publication                     2024-25
+Written and edited articles on advanced mathematical concepts, real-world applications, and problem-solving strategies for the school’s premier mathematics magazine.
+Mentored juniors on how to edit and write articles, conducted editorial reviews, and collaborated on publishing the magazine, ensuring clarity, engagement, and academic rigour.
+Senior Editor, The Econocrat, The Doon School’s Economics publication       2024-25
+Written and edited articles on current economic issues, financial systems, and global market trends, contributing to themed editions and special features.
+Collaborated with the editorial board to mentor junior writers, conduct peer reviews and interviews, and uphold the publication’s analytical depth and editorial standards.
+Associate Editor, The Traditions, The Doon School’s Legacy magazine       2024-25
+Selected by the Board members to be a part of the Editorial board and contribute to making up a book combining school’s traditions of 90 years. 
+
+RESEARCH PROJECTS 
+Pollinator Ecology & Biodiversity Conservation     July 2026
+Investigating whether small-scale honeybee box interventions measurably improve local biodiversity beyond enhancing agricultural productivity by evaluating their ecological impact on pollinator communities and ecosystem health.
+Topic: To what extent do small-scale honeybee box interventions improve local biodiversity beyond enhancing crop yield?
+Designed a controlled field study comparing bee-box intervention sites with matched control locations to quantify changes in pollinator diversity, species richness, visitation frequency, and crop productivity over time.
+Developed standardised ecological monitoring protocols incorporating transect surveys, quadrat sampling, floral resource assessments, photographic observations, and environmental measurements to ensure reliable and reproducible biodiversity data.
+Applied statistical analysis and biodiversity indices (including species richness, abundance, diversity, and evenness metrics) to evaluate ecosystem-level impacts while accounting for seasonal and environmental variation.
+Investigated interactions between managed honeybee colonies, native pollinator communities, flowering plant diversity, and agricultural yield, assessing whether bee boxes support ecological restoration or primarily benefit crop production.
+Established an evidence-based framework to guide pollinator conservation, sustainable agriculture, and biodiversity management, informing future ecological restoration strategies and nature-positive farming practices.
+
+International Student Science Conference                        December 2024
+Selected as one of four students to represent The Doon School at the International Student Science Conference (ISSC), presenting original research alongside delegations from 50+ schools worldwide.
+Topic: How is the size of image aberration affected by changes in the wavelength of visible light and the distance between an aspheric lenticular lens and an illuminated triangular object?
+Investigated the combined influence of object-lens distance and visible-light wavelength on chromatic and spherical aberration in fixed focal-length aspheric lenticular lenses, addressing a gap in existing literature on their combined effects.
+Derived analytical models describing chromatic and spherical aberration, then developed a Python-based numerical solver to generate theoretical predictions for comparison with experimental observations.
+Designed and constructed a controlled optical experimental setup using filtered light sources, precision lens alignment, and calibrated image acquisition to quantify aberration across multiple wavelengths and object-lens distances.
+Analysed experimental results using Logger Pro, validating an inverse asymptotic relationship between image aberration and object-lens distance, while confirming that shorter wavelengths consistently produced greater aberration than longer wavelengths.
+Demonstrated the relevance of the findings to the optimisation of high-precision optical systems, including advanced camera lenses, microscopy, telescopes, augmented reality devices, and computational imaging technologies.
+
+Alpha Science Research Competition                          August 2023
+Winner of the Alpha Science Research Competition for original research investigating the relationship between acoustic signatures and concealed object quantities through experimental physics and theoretical modelling.
+Topic: How accurately can the number of matchsticks inside a matchbox be determined from its acoustic signature, and can the same methodology be generalised to other enclosed objects?
+Designed and built a controlled experimental apparatus to generate repeatable acoustic vibrations, recording sound spectra from matchboxes containing 0–36 matchsticks across multiple orientations using Audacity for digital signal analysis.
+Developed a theoretical model using impulse-momentum mechanics, vibration analysis, and sound propagation, predicting a Gaussian relationship between acoustic loudness and the fractional volume of empty space within an enclosed container.
+Processed and analysed experimental data using Logger Pro, identifying the most reliable measurement orientations, validating theoretical predictions, and demonstrating strong agreement between the analytical model and experimental observations.
+Extended the investigation to chewing gum containers, demonstrating that the same Gaussian acoustic relationship persisted across different enclosed objects and establishing the broader applicability of the proposed model.
+Proposed the integration of machine learning, Fast Fourier Transform (FFT) analysis, and acoustic feature extraction to automate hidden-object estimation from sound recordings, laying the conceptual foundation for the later development of AcousticAI.
+
+COMMUNITY SERVICE 
+Volunteer, Kshamata NGO2024
+Led an online workshop on climate change, educating 20+ students on environmental sustainability.
+Facilitated interactive discussions on climate resilience and everyday eco-friendly practices.
+Designed digital resources to support ongoing learning post-workshop.
+Volunteer, Under the Mango Trees Society2024
+Organized and executed a fundraiser, successfully raising ₹1,45,00 to support sustainable beekeeping.
+Spread awareness about the importance of pollinators in rural livelihoods through student-led campaigns.
+Coordinated donation logistics and post-fundraiser reporting with the organization.
+Volunteer, Naya Sawera NGO              2024
+Conducted an on-ground workshop on bee conservation and sustainable farming practices. 
+Taught students and community members how to construct bee boxes using low-cost materials. 
+Promoted climate awareness and pollinator protection through interactive demonstrations. 
+
+SPORTS
+Golf
+Handicap Index: 10 2023
+The Doon School Golf Team   2021-2025
+
+COMPUTER LANGUAGES
+Python, JavaScript, C++
+
+
+
+
+
+
+
+
+
+
+
+
+

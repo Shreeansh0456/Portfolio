@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae — Shreeansh Bansal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #18181b;
+      --text-muted: #52525b;
+      --accent: #2563eb;
+      --border: #e4e4e7;
+      --font-serif: 'Instrument Serif', 'Newsreader', 'Georgia', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    @media print {
+      body { background: #fff !important; color: #000 !important; font-size: 9.5pt; }
+      .no-print { display: none !important; }
+      .cv-container { box-shadow: none !important; border: none !important; padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+      a { text-decoration: none !important; color: #000 !important; }
+      .section { page-break-inside: avoid; }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #f4f4f5;
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .action-bar {
+      max-width: 860px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .cv-container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 3.5rem 4rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+    }
+
+    header {
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .name-title h1 {
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 2.75rem;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .name-title p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .contact-details {
+      text-align: right;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .cv-section {
+      margin-bottom: 2.25rem;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .cv-entry {
+      margin-bottom: 1.25rem;
+    }
+
+    .cv-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.2rem;
+    }
+
+    .entry-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .entry-org {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .entry-date {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .entry-summary {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+    }
+
+    .bullets {
+      list-style: none;
+      padding-left: 1.25rem;
+    }
+
+    .bullets li {
+      font-size: 0.86rem;
+      color: #3f3f46;
+      line-height: 1.55;
+      margin-bottom: 0.35rem;
+      position: relative;
+    }
+
+    .bullets li::before {
+      content: '•';
+      position: absolute;
+      left: -1rem;
+      color: var(--text-muted);
+    }
+
+    .awards-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1.5rem;
+    }
+
+    .award-row {
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dotted var(--border);
+      padding-bottom: 0.25rem;
+    }
+
+    .award-row span:first-child {
+      font-weight: 600;
+    }
+
+    .award-row span:last-child {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 768px) {
+      .cv-container { padding: 2rem 1.5rem; }
+      header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .contact-details { text-align: left; }
+      .awards-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar no-print">
+    <a href="index.html" class="btn">
+      ← Back to Portfolio
+    </a>
+    <button onclick="window.print()" class="btn btn-primary">
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="cv-container">
+    <header>
+      <div class="name-title">
+        <h1>Shreeansh Bansal</h1>
+        <p>High School Researcher, Systems Engineer & Tech Entrepreneur</p>
+      </div>
+      <div class="contact-details">
+        <div>C-110, Garud Marg, Hanuman Nagar, Vaishali Nagar</div>
+        <div>Jaipur - 302021, Rajasthan, India</div>
+        <div>shreeansh0479@gmail.com • +91 9783088231</div>
+      </div>
+    </header>
+
+    <!-- EDUCATION -->
+    <section class="cv-section">
+      <h2 class="section-title">Education</h2>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Jayshree Periwal International School</span>, Jaipur, Rajasthan
+            <div class="entry-org">International Baccalaureate Diploma Programme (IBDP)</div>
+          </div>
+          <span class="entry-date">2025 – 2027</span>
+        </div>
+        <p class="entry-summary">
+          <strong>Higher Level (HL):</strong> Mathematics Analysis & Approaches (AA), Economics, Physics, Chemistry<br>
+          <strong>Standard Level (SL):</strong> English A Language & Literature, Hindi B<br>
+          <strong>Leadership:</strong> Deputy House Captain (community of 3,300+ students)
+        </p>
+      </div>
+
+      <div class="cv-entry" style="margin-top: 1rem;">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">The Doon School</span>, Dehradun, Uttarakhand
+            <div class="entry-org">Middle & High School Boarding Education</div>
+          </div>
+          <span class="entry-date">2021 – 2025</span>
+        </div>
+        <p class="entry-summary">
+          School Council Representative (Kashmir House), Varsity Golf Team, Model UN Secretariat, Senior Editor of school mathematics and economics publications.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACADEMIC PROGRAMMES -->
+    <section class="cv-section">
+      <h2 class="section-title">Academic Programmes & Residencies</h2>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Berkeley M.E.T. Innovation Academy</span> — UC Berkeley, California
+          </div>
+          <span class="entry-date">June 2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Selective three-week residential fellowship offered jointly by UC Berkeley's College of Engineering & Haas School of Business.</li>
+          <li>Developed ClearCall (AI sports officiating startup) from customer discovery to MVP and pitched to VC investors and Berkeley SkyDeck leaders.</li>
+          <li>Built hardware prototypes at Berkeley's Jacobs Institute for Design Innovation using CAD, 3D printing, and iterative engineering design.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Young Technology Scholars (YTS)</span> — Plaksha University, Chandigarh
+          </div>
+          <span class="entry-date">May 2025</span>
+        </div>
+        <ul class="bullets">
+          <li>Two-week residential engineering program in embedded systems, electronics, and IoT product development.</li>
+          <li>Engineered and calibrated an IoT-Based Intelligent Weather Station (IWS) in an aerodynamic wind tunnel.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Artificial Intelligence for Young Achievers (AIYA)</span> — National University of Singapore (NUS)
+          </div>
+          <span class="entry-date">December 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Developed an end-to-end Customer Churn Prediction system (99% accuracy) utilizing Python, TensorFlow, and scikit-learn.</li>
+          <li>Recognized as Top Achiever of the program with a formal Letter of Recommendation from Dr. Manoranjan Dash (NUS/NTU).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- INNOVATION & VENTURE PORTFOLIO -->
+    <section class="cv-section">
+      <h2 class="section-title">Innovation & Venture Portfolio</h2>
+      
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">AeriSense</span> — Founder
+            <span style="font-size: 0.8rem; color: #10b981; font-weight: 600;">(Accepted @ Springer Nature LNNS)</span>
+          </div>
+          <span class="entry-date">March 2025 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed an end-to-end IoT platform integrating ESP32 with 8+ environmental sensors to continuously monitor CH₄, NH₃, CO₂, H₂S, VOCs, and microclimate.</li>
+          <li>Surveyed 150+ livestock farms across 17 cities in Rajasthan; piloted systems across 14 farms for biogas yield optimization and emission reduction.</li>
+          <li>Authored peer-reviewed paper accepted at Springer's ICT4SD Conference; featured in The Times of India, Dainik Bhaskar, and Rajasthan Patrika.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">ClearCall</span> — Co-Founder & Chief Technology Officer
+            <span style="font-size: 0.8rem; color: #2563eb; font-weight: 600;">(Developed @ UC Berkeley M.E.T.)</span>
+          </div>
+          <span class="entry-date">June 2026 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Architected an edge-AI sports officiating platform using YOLO11, ByteTrack, OpenCV, Flask, and Python for low-latency player/ball tracking and instant replay.</li>
+          <li>Engineered automated boundary detection and sprint analytics; presented and defended before VC investors at Berkeley's Shark Tank showcase.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">BeeWise</span> — Founder
+            <span style="font-size: 0.8rem; color: #d97706; font-weight: 600;">(Computational Ecology)</span>
+          </div>
+          <span class="entry-date">January 2024 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Smart beehive telemetry platform combining ESP32, dual MQ-9 gas sensors, DHT22, and dual HX711 load-cell weight sensors.</li>
+          <li>Built Python Monte Carlo stochastic simulation framework predicting overwintering colony collapse before physical failure occurs.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">SignBridge</span> — Founder
+            <span style="font-size: 0.8rem; color: #7c3aed; font-weight: 600;">(Apple WWDC Swift Student Challenge Top 350)</span>
+          </div>
+          <span class="entry-date">March 2025 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Real-time sign language translation platform converting hand gestures into multilingual text and synthesized speech via computer vision and deep learning.</li>
+          <li>Selected among Top 350 globally out of ~5,000 entries in Apple's Swift Student Challenge 2026.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">AcousticAI</span> — Founder
+            <span style="font-size: 0.8rem; color: #059669; font-weight: 600;">(Alpha Science Competition Winner — 99.3% Acc)</span>
+          </div>
+          <span class="entry-date">January 2023 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Transformed award-winning experimental acoustic physics research into an ML inference pipeline achieving 99.3% accuracy in estimating enclosed objects.</li>
+          <li>Developed with Dr. Manoranjan Dash (NUS); applies Fast Fourier Transform (FFT) feature extraction for non-destructive testing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESEARCH PROJECTS -->
+    <section class="cv-section">
+      <h2 class="section-title">Research Projects & Publications</h2>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">Springer Nature LNNS ICT4SD Publication</span> (AeriSense IoT Research)
+          <span class="entry-date">2026</span>
+        </div>
+        <p class="entry-summary">Low-cost IoT precision livestock telemetry, multi-gas sensing, and biogas yield forecasting.</p>
+      </div>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">International Student Science Conference (ISSC)</span> (Selected 1 of 4 from The Doon School)
+          <span class="entry-date">December 2024</span>
+        </div>
+        <p class="entry-summary">Chromatic and spherical aberration in aspheric lenticular lenses across visible wavelengths; derived analytical model and Python numerical solver.</p>
+      </div>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <span class="entry-title">Alpha Science Research Competition (Physics Fight Winner)</span>
+          <span class="entry-date">August 2023</span>
+        </div>
+        <p class="entry-summary">Gaussian acoustic impulse-momentum modeling of concealed enclosed objects via digital signal spectral analysis.</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="cv-section">
+      <h2 class="section-title">Experience & Internships</h2>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div><span class="entry-title">One Step Greener</span> — Sustainability Research & CSR Strategy Intern</div>
+          <span class="entry-date">June 2026</span>
+        </div>
+        <p class="entry-summary">Built a centralized CSR intelligence database analyzing 200+ top Indian corporations, ESG priorities, EPR policies, and carbon credits.</p>
+      </div>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div><span class="entry-title">Plaksha University</span> — Summer School Teaching Assistant (YTS)</div>
+          <span class="entry-date">May 2026</span>
+        </div>
+        <p class="entry-summary">Contributed 120+ hours mentoring 100+ students in embedded systems; co-developed a robotic hand integrating custom strain sensors.</p>
+      </div>
+      <div class="cv-entry">
+        <div class="entry-header">
+          <div><span class="entry-title">Forest Department of Jaisalmer, Rajasthan</span> — Biodiversity Monitoring Intern</div>
+          <span class="entry-date">July 2025</span>
+        </div>
+        <p class="entry-summary">Conducted 25+ desert field surveys and documented 80+ species of desert flora and fauna across Thar Desert sanctuaries.</p>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="cv-section">
+      <h2 class="section-title">Selected Scholastic Achievements & Honors</h2>
+      <div class="awards-list">
+        <div class="award-row"><span>Avogadro Chemistry Contest (World Rank 1)</span><span>Waterloo '26</span></div>
+        <div class="award-row"><span>Fermat Mathematics Contest (Distinction)</span><span>Waterloo '26</span></div>
+        <div class="award-row"><span>Apple WWDC Swift Student Challenge (Top 350)</span><span>Apple '26</span></div>
+        <div class="award-row"><span>Global Research Challenge (Top 300)</span><span>Synthica '26</span></div>
+        <div class="award-row"><span>London Int'l Youth Science Forum Indian Delegation</span><span>Imperial '26</span></div>
+        <div class="award-row"><span>British Science Association CREST Gold Award</span><span>BSA '26</span></div>
+        <div class="award-row"><span>UK Mathematics Trust Senior Challenge (Gold)</span><span>UKMT '25</span></div>
+        <div class="award-row"><span>Thailand Int'l Math Olympiad (Double Gold)</span><span>TIMO '24, '26</span></div>
+        <div class="award-row"><span>Sir Isaac Newton Physics Contest (Distinction)</span><span>Waterloo '25</span></div>
+        <div class="award-row"><span>NASA Space Settlement Design Contest (Runners Up)</span><span>KSC Florida '24</span></div>
+        <div class="award-row"><span>John Locke Institute Essay Contest (Shortlisted)</span><span>Oxford '24</span></div>
+        <div class="award-row"><span>Alpha Science Competition (Winner)</span><span>Alpha Sci '24</span></div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & JOURNALISM -->
+    <section class="cv-section">
+      <h2 class="section-title">Leadership, Journalism & Community Service</h2>
+      <ul class="bullets">
+        <li><strong>Chief Technology Officer (CTO), BizForHer (2026–27):</strong> Directing platform technology for NITI Aayog-backed initiative reaching 20,000+ girls across 25 states; $2.5M+ raised.</li>
+        <li><strong>Deputy House Captain, JPIS (2025–26):</strong> Elected student leader representing 3,300+ students.</li>
+        <li><strong>Vice President of Engineering, ISSDC (2024):</strong> Led 60+ multinational students in a 48-hour aerospace RFP design simulation at Kennedy Space Center.</li>
+        <li><strong>Senior Editor, Young Scientist Journal (2026):</strong> Peer reviewing CS articles for the largest student research journal.</li>
+        <li><strong>Senior Editor, The Infinity & The Econocrat, The Doon School (2024–25):</strong> Authored and edited mathematics and economics journals.</li>
+        <li><strong>DSMUN Secretariat Member (2023–25):</strong> Organized Asia's largest student MUN (700+ delegates, ₹60L budget).</li>
+        <li><strong>Under the Mango Trees Society (2024):</strong> Organized fundraiser raising ₹1,45,000 for rural beekeepers.</li>
+        <li><strong>Golf:</strong> Handicap Index: 10 (2023); The Doon School Varsity Golf Team (2021–2025).</li>
+      </ul>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="cv-section" style="margin-bottom: 0;">
+      <h2 class="section-title">Technical Skills</h2>
+      <p style="font-size: 0.88rem; line-height: 1.6;">
+        <strong>Languages:</strong> Python, JavaScript (ES6+), C++, Arduino C, Swift (Basic), HTML5/CSS3<br>
+        <strong>Machine Learning & Data:</strong> TensorFlow, Keras, scikit-learn, OpenCV, YOLO11, ByteTrack, FFT Spectral Analysis, Monte Carlo Simulations, Pandas, NumPy<br>
+        <strong>Hardware & Embedded:</strong> ESP32, Arduino, MQ-Series Gas Sensors (CH₄, NH₃, H₂S, CO₂), HX711 Load Cells, Wind Tunnel Aerodynamic Calibration, 3D Printing, CAD
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>

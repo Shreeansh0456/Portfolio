@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="line1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg1)"/>
+  <circle cx="540" cy="80" r="120" fill="#10b981" opacity="0.1" filter="blur(40px)"/>
+  <!-- Grid lines -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="40" y1="80" x2="600" y2="80"/>
+    <line x1="40" y1="140" x2="600" y2="140"/>
+    <line x1="40" y1="200" x2="600" y2="200"/>
+    <line x1="40" y1="260" x2="600" y2="260"/>
+  </g>
+  <!-- Card Header -->
+  <rect x="40" y="35" width="140" height="28" rx="6" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)"/>
+  <text x="50" y="54" fill="#34d399" font-family="monospace" font-size="11" font-weight="bold">AERISENSE IoT • ESP32</text>
+  <text x="40" y="110" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="bold">Livestock Biogas &amp; CH₄ Telemetry</text>
+  <text x="40" y="132" fill="#94a3b8" font-family="sans-serif" font-size="13">150+ Farms Piloted across 17 Cities in Rajasthan • Springer Nature LNNS</text>
+  <!-- Wave curve -->
+  <path d="M 40 240 Q 120 180, 200 210 T 360 170 T 480 220 T 600 150" fill="none" stroke="url(#line1)" stroke-width="4"/>
+  <circle cx="360" cy="170" r="6" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
+  <!-- Metric chips -->
+  <rect x="40" y="280" width="120" height="44" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="52" y="298" fill="#94a3b8" font-family="sans-serif" font-size="10">CH₄ EMISSIONS</text>
+  <text x="52" y="316" fill="#34d399" font-family="sans-serif" font-size="14" font-weight="bold">-38% Spike</text>
+  <rect x="175" y="280" width="120" height="44" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="187" y="298" fill="#94a3b8" font-family="sans-serif" font-size="10">SENSORS</text>
+  <text x="187" y="316" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="bold">8+ Channels</text>
+</svg>
