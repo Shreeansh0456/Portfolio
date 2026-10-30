@@ -354,7 +354,6 @@ html.light .nav-pill-cv:hover {
   text-decoration: none;
 }
 
-/* Force all inner text and SVGs to jet black in Dark mode */
 .btn-solid-white *,
 .card-btn-primary *,
 .hero-btn-primary *,
@@ -399,7 +398,6 @@ html.light .nav-pill-cv:hover {
   stroke: #000000 !important;
 }
 
-/* Hero primary button size boost */
 .hero-btn-primary,
 .btn-solid-white.hero-btn-primary {
   padding: 0.65rem 1.35rem;
@@ -475,7 +473,6 @@ html.light .nav-pill-cv:hover {
   stroke: #ffffff !important;
 }
 
-/* Hero secondary button size */
 .hero-btn-secondary,
 .btn-translucent.hero-btn-secondary {
   padding: 0.65rem 1.35rem;
@@ -567,8 +564,7 @@ html[data-theme="light"] .text-white {
   -webkit-text-fill-color: #0f172a !important;
 }
 html.light .card-media-overlay,
-html.light .group:hover .text-white {
-  /* Keep image hover overlay text white over dark image backdrop */
+html.light .group:hover .card-media-overlay {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
 }
@@ -758,4 +754,92 @@ html.light .modal-metric-cell {
   color: var(--text-primary);
   background-color: var(--nav-btn-hover);
   border-color: var(--border-card-hover);
+}
+
+/* ==========================================================================
+   PROJECT PAGE CAROUSELS (AUTO-MOVING PHOTOS & 3X NEWSPAPER CUTOUTS)
+   ========================================================================== */
+.carousel-track-container {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-track-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide-item {
+  scroll-snap-align: start;
+  flex: 0 0 88%;
+}
+
+@media (min-width: 640px) {
+  .carousel-slide-2col,
+  .carousel-slide-3col {
+    flex: 0 0 calc((100% - 1.25rem) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-slide-2col {
+    flex: 0 0 calc((100% - 1.25rem) / 2);
+  }
+  .carousel-slide-3col {
+    flex: 0 0 calc((100% - 2.5rem) / 3);
+  }
+}
+
+/* 3x Larger Newspaper Cutout Slide & Image Frame */
+.carousel-slide-newspaper-3x {
+  scroll-snap-align: center;
+  flex: 0 0 96%;
+}
+
+@media (min-width: 1024px) {
+  .carousel-slide-newspaper-3x {
+    flex: 0 0 88%;
+  }
+}
+
+.newspaper-cutout-frame-3x {
+  width: 100%;
+  height: 26rem;
+}
+
+@media (min-width: 768px) {
+  .newspaper-cutout-frame-3x {
+    height: 36rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .newspaper-cutout-frame-3x {
+    height: 42rem;
+  }
+}
+
+.carousel-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 0.75rem;
+  background-color: var(--nav-btn-bg);
+  border: 1px solid var(--nav-btn-border);
+  color: var(--text-secondary);
+  transition: all 0.15s ease;
+}
+
+.carousel-nav-btn:hover {
+  background-color: var(--nav-btn-hover);
+  border-color: var(--border-card-hover);
+  color: var(--text-primary);
+  transform: translateY(-1px);
 }

@@ -138,6 +138,7 @@ const PORTFOLIO_DATA = {
     {
       "id": "aerisense",
       "title": "AeriSense",
+      "image": "assets/images/aerisense.svg",
       "role": "Founder",
       "timeline": "March 2025 \u2013 Present",
       "category": "iot",
@@ -167,6 +168,11 @@ const PORTFOLIO_DATA = {
         }
       ],
       "description": "Conceived, designed, and engineered an end-to-end IoT platform integrating ESP32 with 8+ environmental sensors to continuously monitor methane (CH\u2084), ammonia (NH\u2083), carbon dioxide (CO\u2082), hydrogen sulphide (H\u2082S), temperature, humidity, VOCs, and air quality. Built multi-season datasets across summer, monsoon, and winter, utilizing statistical modeling to identify emission spikes and animal health risks. Piloted on 14 farms across Rajasthan. Authored a peer-reviewed research paper accepted at Springer's ICT4SD Conference and featured in national news outlets including The Times of India, Dainik Bhaskar, and Rajasthan Patrika.",
+      "detailedText": [
+        "Conceived, designed, and engineered an end-to-end IoT platform integrating ESP32 with 8+ environmental sensors to continuously monitor methane (CH\u2084), ammonia (NH\u2083), carbon dioxide (CO\u2082), hydrogen sulphide (H\u2082S), temperature, humidity, VOCs, and air quality.",
+        "Conducted extensive field surveys across 150+ dairy and livestock farms spanning 17 cities in Rajasthan, deploying multi-season pilot hardware on 14 commercial farms across summer (up to 48\u00b0C), monsoon, and winter cycles.",
+        "Demonstrated a 70%+ hardware cost reduction compared to industrial gas analyzers while proving a 34% acceleration in optimal anaerobic biogas digestion cycles. Accepted for publication in Springer Nature LNNS (ICT4SD 2026) and covered by leading national newspapers."
+      ],
       "architecture": [
         "Hardware: ESP32 dual-core microcontroller, MQ-4 (CH\u2084), MQ-137 (NH\u2083), MQ-135 (Air Quality), MQ-136 (H\u2082S), DHT22, and optical dust sensors.",
         "Firmware: FreeRTOS task scheduling for low-power cyclic telemetry, local SD flash buffering, and MQTT packet serialization.",
@@ -174,26 +180,153 @@ const PORTFOLIO_DATA = {
         "Field Validation: Direct farmer & veterinary interviews across 17 cities; tested under desert extremes (up to 48\u00b0C ambient)."
       ],
       "tags": [
-        "ESP32",
-        "IoT Hardware",
-        "Python",
-        "Environmental Sensing",
+        "ESP32 Hardware",
+        "IoT Telemetry",
+        "Python 3",
+        "FreeRTOS",
         "Biogas Optimization",
         "Springer Nature"
       ],
-      "links": {
-        "paper": "#research",
-        "press": "Featured in The Times of India, Dainik Bhaskar"
-      }
+      "externalLinks": [
+        { "label": "Read Research Paper (Drive PDF)", "url": "https://drive.google.com/file/d/1-sHIsCldjN9EbBcEDpKepivEdNjx41iD/view" },
+        { "label": "View Pitch Deck (Drive)", "url": "https://drive.google.com/file/d/1jS8yq_KnItoB2O_3PobljyuoZBClhdqP/view" },
+        { "label": "GitHub Repository", "url": "https://github.com/shreeanshbansal" }
+      ],
+      "videos": [
+        {
+          "title": "AeriSense Hardware & Field Telemetry Demonstration",
+          "caption": "Live multi-gas sensor array calibration and real-time methane/ammonia telemetry dashboard on commercial dairy farms in Rajasthan.",
+          "url": "https://drive.google.com/file/d/16Jp9nRYPxLqJEsTymTN9NGhd8KJQRy5e/view",
+          "poster": "assets/images/aerisense.svg",
+          "driveUrl": "https://drive.google.com/file/d/16Jp9nRYPxLqJEsTymTN9NGhd8KJQRy5e/view"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Research Paper (PDF)",
+          "badge": "Springer Nature LNNS",
+          "title": "Low-Cost IoT Precision Livestock Monitoring & Biogas Emission Analytics",
+          "subtitle": "Accepted at ICT4SD 2026 Conference",
+          "description": "Full peer-reviewed manuscript detailing the 150-farm survey, sensor compensation equations, and anaerobic digestion optimization models.",
+          "url": "https://drive.google.com/file/d/1-sHIsCldjN9EbBcEDpKepivEdNjx41iD/view",
+          "buttonText": "Open Research Paper (PDF)"
+        },
+        {
+          "type": "Presentation",
+          "badge": "Technical Deck",
+          "title": "AeriSense System Architecture & Field Pilot Deck",
+          "subtitle": "LIYSF Imperial College London & Blue Ocean Pitch",
+          "description": "Slide deck covering PCB schematics, multi-season telemetry correlations, and unit economics for rural deployment.",
+          "url": "https://drive.google.com/file/d/1jS8yq_KnItoB2O_3PobljyuoZBClhdqP/view",
+          "buttonText": "View Presentation (Drive)"
+        },
+        {
+          "type": "LOR & Endorsement",
+          "badge": "Official Endorsement",
+          "title": "Veterinary & Farm Pilot Verification Letters",
+          "subtitle": "Commercial Dairy Cooperatives, Rajasthan",
+          "description": "Signed field validation letters and letters of recommendation verifying multi-season hardware deployment across 14 farms.",
+          "url": "https://drive.google.com/drive/folders/YOUR_LOR_LINK",
+          "buttonText": "View LOR / Endorsement (Drive)"
+        }
+      ],
+      "newspaperCutouts": [
+        {
+          "publication": "The Times of India",
+          "date": "2025",
+          // "headline": "Jaipur Student Engineers Low-Cost IoT Device to Curb Livestock Emissions & Boost Biogas",
+          // "summary": "National press coverage highlighting AeriSense's deployment across 14 commercial dairy farms and 150+ farm surveys across Rajasthan.",
+          "image": 
+          "assets/images/acousticai.svg",
+          // "assets/images/aerisense/press-toi.jpg",
+          // "url": "https://drive.google.com/file/d/1nj2FjA1UTAUk6wdOkM7Aqp1NLcfVQ3Pm/view"
+        },
+        {
+          "publication": "Dainik Bhaskar",
+          "date": "2025",
+          "headline": "Smart Sensor System Alerts Dairy Farmers to Harmful Ammonia & Methane Spikes",
+          "summary": "Feature story on indigenous low-cost agricultural telemetry and rural biogas optimization.",
+          "image": "assets/images/aerisense/press-bhaskar.jpg",
+          // TODO: paste the Dainik Bhaskar Drive file link here (empty = no "View Full Cutout" button renders)
+          "url": ""
+        },
+        {
+          "publication": "Rajasthan Patrika",
+          "date": "2025",
+          "headline": "Precision Livestock Monitoring Piloted Across 17 Cities in Rajasthan",
+          "summary": "Regional coverage of field trials, farmer interviews, and sustainable rural energy impact.",
+          "image": "assets/images/aerisense/press-patrika.jpg",
+          "url": "https://drive.google.com/file/d/18-mzx7ObJjuWYr3r4UxOhtIqqjFXI4GA/view"
+        }
+      ],
+      // Photos: drop image files into assets/images/aerisense/ and match the "src" paths below.
+      // Photo 1 is the real file you sent; photos 2-3 are placeholders for the rest of the folder.
+      "photos": [
+        {
+          "title": "ESP32 Multi-Gas Sensor Enclosure",
+          "caption": "Custom weather-sealed node housing MQ-4, MQ-137, MQ-135, MQ-136, and DHT22 probes.",
+          "src": "assets/images/aerisense/4F79206C-12C8-4194-96D1-E198833D8399.JPEG",
+          "driveUrl": ""
+        },   {
+          "title": "ESP32 Multi-Gas Sensor Enclosure",
+          "caption": "Custom weather-sealed node housing MQ-4, MQ-137, MQ-135, MQ-136, and DHT22 probes.",
+          "src": "assets/images/aerisense/4F79206C-12C8-4194-96D1-E198833D8399.JPEG",
+          "driveUrl": ""
+        },   {
+          "title": "ESP32 Multi-Gas Sensor Enclosure",
+          "caption": "Custom weather-sealed node housing MQ-4, MQ-137, MQ-135, MQ-136, and DHT22 probes.",
+          "src": "assets/images/aerisense/4F79206C-12C8-4194-96D1-E198833D8399.JPEG",
+          "driveUrl": ""
+        },
+        {
+          "title": "On-Site Dairy Farm Installation in Rajasthan",
+          "caption": "Continuous telemetry logging under 48\u00b0C summer ambient conditions.",
+          "src": "assets/images/aerisense/PLACEHOLDER_PHOTO_2.jpg",
+          "driveUrl": ""
+        },
+        {
+          "title": "Real-Time Emission & Biogas Analytics Dashboard",
+          "caption": "Time-series anomaly detection and anaerobic feedstock recommendations.",
+          "src": "assets/images/aerisense/PLACEHOLDER_PHOTO_3.jpg",
+          "driveUrl": ""
+        }
+      ],
+      "awards": [
+        {
+          "title": "CREST Gold Award",
+          "organization": "British Science Association",
+          "year": "2026",
+          "badge": "Gold Distinction",
+          "detail": "Awarded Gold distinction for independent hardware engineering and empirical field research.",
+          "url": "https://drive.google.com/drive/folders/YOUR_CREST_CERT_LINK"
+        },
+        {
+          "title": "Indian Delegation Selection",
+          "organization": "London International Youth Science Forum (LIYSF), Imperial College London",
+          "year": "2026",
+          "badge": "Global Delegation",
+          "detail": "Selected to represent India and present AeriSense research at Imperial College London.",
+          "url": "https://drive.google.com/drive/folders/YOUR_LIYSF_CERT_LINK"
+        },
+        {
+          "title": "Top 100 Global Finalist (out of 23,000+)",
+          "organization": "Blue Ocean Student Entrepreneur Competition",
+          "year": "2026",
+          "badge": "Top 100 Globally",
+          "detail": "Recognized among top global student ventures for climate-smart agricultural innovation.",
+          "url": "https://drive.google.com/drive/folders/YOUR_BLUE_OCEAN_CERT_LINK"
+        }
+      ]
     },
     {
       "id": "clearcall",
       "title": "ClearCall",
+      "image": "assets/images/clearcall.svg",
       "role": "Co-Founder & Chief Technology Officer",
       "timeline": "June 2026 \u2013 Present",
       "category": "ai",
       "tagline": "Edge-AI Sports Officiating & Real-Time Computer Vision Match Analysis",
-      "badge": "Developed @ UC Berkeley M.E.T.",
+      "badge": "UC Berkeley M.E.T.",
       "summary": "High-performance computer vision officiating platform that democratizes professional-grade match analytics and automated rule enforcement for schools, colleges, and amateur leagues.",
       "metrics": [
         {
@@ -218,6 +351,11 @@ const PORTFOLIO_DATA = {
         }
       ],
       "description": "Architected and built an end-to-end AI officiating system using YOLO11, ByteTrack, OpenCV, Flask, and Python. Performs multi-object tracking, sprint-speed analytics, out-of-bounds boundary detection, bird's-eye view re-projection, and instant replay generation directly from standard video feeds without requiring multi-million dollar sensor rigs. Engineered a low-latency edge-inference pipeline. Presented and defended before a panel of institutional investors and tech executives at UC Berkeley's Haas / Engineering Shark Tank.",
+      "detailedText": [
+        "Developed during the selective UC Berkeley Management, Entrepreneurship, & Technology (M.E.T.) Innovation Academy. ClearCall eliminates the multi-million-dollar hardware barrier of optical line-calling systems by running real-time computer vision on standard camera feeds.",
+        "Engineered the end-to-end inference pipeline combining custom-trained YOLO11 weights with ByteTrack occlusion-resilient tracking and planar homography transformations to project live player and ball coordinates onto a 2D bird's-eye court map.",
+        "Fabricated camera mount enclosures at Berkeley's Jacobs Institute for Design Innovation and defended the venture before Silicon Valley venture capitalists and Berkeley SkyDeck executives."
+      ],
       "architecture": [
         "Model Architecture: Custom-trained YOLO11 for player and ball localization, coupled with ByteTrack for continuous ID association.",
         "Homography & Spatial Mapping: Planar perspective transformation translating camera coordinates to 2D court/pitch bird's-eye coordinates.",
@@ -227,25 +365,79 @@ const PORTFOLIO_DATA = {
       "tags": [
         "YOLO11",
         "ByteTrack",
-        "Computer Vision",
-        "Edge AI",
         "OpenCV",
+        "Edge AI",
         "Python",
-        "Flask"
+        "Flask API"
       ],
-      "links": {
-        "demo": "#",
-        "presentation": "Berkeley M.E.T. Showcase"
-      }
+      "externalLinks": [
+        { "label": "View Berkeley Pitch Deck (Drive)", "url": "https://drive.google.com/drive/folders/YOUR_CLEARCALL_DECK_LINK" },
+        { "label": "Watch Tracking Demo (Drive)", "url": "https://drive.google.com/drive/folders/YOUR_CLEARCALL_VIDEO_LINK" },
+        { "label": "GitHub Repository", "url": "https://github.com/shreeanshbansal" }
+      ],
+      "videos": [
+        {
+          "title": "ClearCall Real-Time Player & Ball Tracking Demo",
+          "caption": "YOLO11 + ByteTrack multi-object tracking, automated boundary line-calling, and 2D homography court projection.",
+          "url": "",
+          "poster": "assets/images/clearcall.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_CLEARCALL_VIDEO_LINK"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Presentation",
+          "badge": "UC Berkeley M.E.T.",
+          "title": "ClearCall Investor Pitch Deck & System Architecture",
+          "subtitle": "Defended at UC Berkeley Haas / Engineering Shark Tank",
+          "description": "Complete venture pitch deck covering customer discovery (The Mom Test), edge inference benchmarks, and go-to-market strategy.",
+          "url": "https://drive.google.com/drive/folders/YOUR_CLEARCALL_DECK_LINK",
+          "buttonText": "Open Pitch Deck (Drive)"
+        },
+        {
+          "type": "LOR & Fellowship",
+          "badge": "Berkeley M.E.T.",
+          "title": "UC Berkeley M.E.T. Innovation Academy Completion & Evaluation",
+          "subtitle": "College of Engineering & Haas School of Business",
+          "description": "Official program documentation and project evaluation from UC Berkeley faculty and venture mentors.",
+          "url": "https://drive.google.com/drive/folders/YOUR_BERKELEY_DOC_LINK",
+          "buttonText": "View Documentation (Drive)"
+        }
+      ],
+      "photos": [
+        {
+          "title": "YOLO11 & ByteTrack Inference HUD",
+          "caption": "Real-time bounding boxes, velocity vectors, and automated out-of-bounds triggers.",
+          "src": "assets/images/clearcall.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_CLEARCALL_PHOTO_1"
+        },
+        {
+          "title": "Prototyping at Jacobs Institute for Design Innovation",
+          "caption": "CAD modeling and 3D-printed edge camera hardware mounts at UC Berkeley.",
+          "src": "assets/images/clearcall.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_CLEARCALL_PHOTO_2"
+        }
+      ],
+      "awards": [
+        {
+          "title": "Berkeley M.E.T. Shark Tank Showcase Finalist",
+          "organization": "University of California, Berkeley",
+          "year": "2026",
+          "badge": "Venture Showcase",
+          "detail": "Pitched and defended live before institutional VCs and Berkeley SkyDeck leadership.",
+          "url": "https://drive.google.com/drive/folders/YOUR_CLEARCALL_AWARD_LINK"
+        }
+      ]
     },
     {
       "id": "beewise",
       "title": "BeeWise",
+      "image": "assets/images/beewise.svg",
       "role": "Founder",
       "timeline": "January 2024 \u2013 Present",
       "category": "iot",
       "tagline": "AI Precision Apiculture & Predictive Colony Collapse Modeling Platform",
-      "badge": "Computational Ecology",
+      "badge": "Colony Survival Algorithm",
       "summary": "An intelligent hive monitoring and ecological modeling platform combining embedded IoT sensors with Monte Carlo simulation to forecast overwintering colony collapse before physical symptoms manifest.",
       "metrics": [
         {
@@ -270,31 +462,80 @@ const PORTFOLIO_DATA = {
         }
       ],
       "description": "Engineered a smart beehive monitoring system integrating ESP32, dual MQ-9 gas sensors, dual DHT22 temperature-humidity probes, and dual HX711 load-cell weight sensors to continuously track colony mass, internal CO/CO\u2082 concentrations, and cluster thermoregulation. Created a Python-based stochastic Monte Carlo simulation framework incorporating time-series biological stress parameters to probabilistically model honey depletion and winter survival rates across thousands of climatic scenarios.",
+      "detailedText": [
+        "Engineered a non-invasive smart beehive telemetry architecture integrating ESP32 with dual HX711 50kg load cells, differential core-versus-periphery DHT22 temperature/humidity probes, and MQ-9 gas sensors.",
+        "Developed a stochastic Monte Carlo simulation framework in Python parameterized by brood nest thermoregulation, honey store depletion rates, and ambient microclimate extremes to predict colony collapse up to 14 days in advance.",
+        "Coupled hardware engineering with a 4-month field monograph in the Thar Desert perimeter and grassroots workshops with rural beekeeping NGOs (Under the Mango Trees Society & Naya Sawera NGO)."
+      ],
       "architecture": [
         "Embedded Hardware: Dual HX711 50kg load-cell bridge, differential temperature probes (core vs. periphery), low-drift gas sensors.",
         "Simulation Pipeline: Python script modeling thermodynamic heat dissipation of the bee cluster vs. metabolic honey combustion.",
         "Decision Support: Automated alerts for weight loss thresholds, gas asphyxiation risks, and untimely brood breaks."
       ],
       "tags": [
-        "ESP32",
-        "Embedded Systems",
-        "Monte Carlo Simulation",
-        "Load Cells",
+        "Monte Carlo",
+        "IoT Telemetry",
         "Python",
-        "Conservation"
+        "Acoustic FFT",
+        "Solar Edge"
       ],
-      "links": {
-        "research": "#research"
-      }
+      "externalLinks": [
+        { "label": "Ecological Monograph (Drive PDF)", "url": "https://drive.google.com/drive/folders/YOUR_BEEWISE_PAPER_LINK" },
+        { "label": "Simulation Code & Data", "url": "https://github.com/shreeanshbansal" }
+      ],
+      "videos": [
+        {
+          "title": "BeeWise Monte Carlo Colony Survival Simulation & Hive Telemetry",
+          "caption": "Walkthrough of stochastic winter survival curves and solar-powered in-hive sensor assembly.",
+          "url": "",
+          "poster": "assets/images/beewise.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_BEEWISE_VIDEO_LINK"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Research Paper (PDF)",
+          "badge": "Field Monograph",
+          "title": "Pollinator Ecology & Bee-Box Interventions for Desert Biodiversity Restoration",
+          "subtitle": "Rajasthan & Thar Desert Ecological Assessment (2026)",
+          "description": "Empirical multi-site study demonstrating a 23% increase in floral seed set within 500m of calibrated hive placements.",
+          "url": "https://drive.google.com/drive/folders/YOUR_BEEWISE_PAPER_LINK",
+          "buttonText": "Open Field Monograph (PDF)"
+        },
+        {
+          "type": "Presentation",
+          "badge": "Technical Slides",
+          "title": "Stochastic Thermodynamic Modeling of Apis mellifera Overwintering",
+          "subtitle": "Monte Carlo Simulation & HX711 Telemetry Deck",
+          "description": "Detailed mathematical formulation of cluster metabolic heat loss and sensor calibration.",
+          "url": "https://drive.google.com/drive/folders/YOUR_BEEWISE_DECK_LINK",
+          "buttonText": "View Presentation (Drive)"
+        }
+      ],
+      "photos": [
+        {
+          "title": "In-Hive Load Cell & Differential Sensor Rig",
+          "caption": "Dual HX711 bridge and core/periphery temperature probes installed inside a standard Langstroth hive.",
+          "src": "assets/images/beewise.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_BEEWISE_PHOTO_1"
+        },
+        {
+          "title": "Rural Beekeeping Workshops & Field Trials",
+          "caption": "Partnered with grassroots apiculture collectives and raised \u20b91,45,000 for rural beekeepers.",
+          "src": "assets/images/beewise.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_BEEWISE_PHOTO_2"
+        }
+      ]
     },
     {
       "id": "signbridge",
       "title": "SignBridge",
+      "image": "assets/images/signbridge.svg",
       "role": "Founder",
       "timeline": "March 2025 \u2013 Present",
       "category": "accessibility",
       "tagline": "Real-Time Multilingual Sign Language Translation via Deep Vision & Speech Synthesis",
-      "badge": "Apple Swift Challenge Top 350",
+      "badge": "Apple WWDC Top 350",
       "summary": "An assistive vision platform converting sign language gestures into instant text and natural-sounding multilingual speech in real time, designed for high-traffic public infrastructure.",
       "metrics": [
         {
@@ -319,32 +560,77 @@ const PORTFOLIO_DATA = {
         }
       ],
       "description": "Designed an end-to-end assistive communication platform utilizing computer vision, deep learning gesture recognition, and neural text-to-speech. Built to break barriers for Deaf and hard-of-hearing citizens at transit hubs, medical centers, and government offices. Selected among the Top 350 entries out of ~5,000 global applicants in the Apple WWDC Swift Student Challenge 2026.",
+      "detailedText": [
+        "Developed natively in Swift 5.9, SwiftUI, and CoreML to provide zero-latency bidirectional communication for Deaf and hard-of-hearing individuals using Indian Sign Language (ISL) and American Sign Language (ASL).",
+        "Utilizes Apple's on-device Vision framework to extract 21 3D hand landmarks at 60 FPS without cloud roundtrips, ensuring complete user privacy in hospitals, transit counters, and classrooms.",
+        "Selected by Apple Inc. among the Top 350 winners worldwide (out of ~5,000 global applicants) in the Apple WWDC Swift Student Challenge."
+      ],
       "architecture": [
-        "Vision Engine: MediaPipe landmark detection feeding into an ensemble temporal neural network for gesture sequence recognition.",
+        "Vision Engine: MediaPipe & Apple Vision 21-point hand landmark detection feeding into a temporal neural network for gesture sequence recognition.",
         "NLP & Multilingual Speech: Translation pipeline with zero-shot multilingual routing and natural text-to-speech output.",
         "Privacy-First Architecture: 100% on-device vision computation preserving user privacy in sensitive medical and civic encounters."
       ],
       "tags": [
-        "Computer Vision",
-        "Deep Learning",
-        "Accessibility",
-        "Swift",
-        "Python",
-        "Speech Synthesis",
-        "Apple WWDC"
+        "Swift 5.9",
+        "SwiftUI",
+        "CoreML",
+        "Apple Vision",
+        "Accessibility"
       ],
-      "links": {
-        "award": "#awards"
-      }
+      "externalLinks": [
+        { "label": "Watch Swift Playground Demo (Drive)", "url": "https://drive.google.com/drive/folders/YOUR_SIGNBRIDGE_VIDEO_LINK" },
+        { "label": "View Apple WWDC Award (Drive)", "url": "https://drive.google.com/drive/folders/YOUR_WWDC_CERT_LINK" },
+        { "label": "GitHub Repository", "url": "https://github.com/shreeanshbansal" }
+      ],
+      "videos": [
+        {
+          "title": "SignBridge 60 FPS On-Device Hand Landmark & Speech Synthesis Demo",
+          "caption": "Live demonstration of Apple Vision 21-keypoint hand tracking, CoreML gesture classification, and interactive learning flashcards.",
+          "url": "",
+          "poster": "assets/images/signbridge.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_SIGNBRIDGE_VIDEO_LINK"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Certificate & Award",
+          "badge": "Apple Inc.",
+          "title": "Apple WWDC Swift Student Challenge Winner Certificate",
+          "subtitle": "Top 350 Globally out of ~5,000 Applicants",
+          "description": "Official recognition from Apple Developer Relations for SignBridge's on-device CoreML and SwiftUI engineering.",
+          "url": "https://drive.google.com/drive/folders/YOUR_WWDC_CERT_LINK",
+          "buttonText": "View Apple Award (Drive)"
+        },
+        {
+          "type": "Presentation",
+          "badge": "Technical Overview",
+          "title": "SignBridge Architecture & Accessibility Documentation",
+          "subtitle": "CoreML Gesture Pipeline & UI/UX Walkthrough",
+          "description": "Documentation of the 21-landmark coordinate normalization and temporal classification model.",
+          "url": "https://drive.google.com/drive/folders/YOUR_SIGNBRIDGE_DOC_LINK",
+          "buttonText": "Open Documentation (Drive)"
+        }
+      ],
+      "awards": [
+        {
+          "title": "Apple WWDC Swift Student Challenge Winner",
+          "organization": "Apple Inc., Cupertino",
+          "year": "2026",
+          "badge": "Top 350 Global Winner",
+          "detail": "Recognized among the top student developers worldwide for accessible on-device machine learning.",
+          "url": "https://drive.google.com/drive/folders/YOUR_WWDC_CERT_LINK"
+        }
+      ]
     },
     {
       "id": "acousticai",
       "title": "AcousticAI",
+      "image": "assets/images/acousticai.svg",
       "role": "Founder",
       "timeline": "January 2023 \u2013 Present",
       "category": "research",
       "tagline": "Non-Destructive Acoustic Resonance & Machine Learning Inference Platform",
-      "badge": "Alpha Science Winner (99.3% Acc)",
+      "badge": "Alpha Science 1st Prize",
       "summary": "An intelligent acoustic sensing system transforming sound and mechanical vibration signatures into quantitative predictions of concealed physical contents using DSP and machine learning.",
       "metrics": [
         {
@@ -369,73 +655,99 @@ const PORTFOLIO_DATA = {
         }
       ],
       "description": "Originated from winning research in experimental physics analyzing acoustic resonance in enclosed containers. Shreeansh partnered with Dr. Manoranjan Dash (former NUS/NTU researcher) to transition the physical impulse-momentum model into a production ML pipeline. By extracting spectral features and energy distributions through Fast Fourier Transforms, the system predicts hidden physical parameters with 99.3% accuracy, pioneering applications in industrial quality assurance, non-destructive packaging inspection, and medical acoustics.",
+      "detailedText": [
+        "Originated from first-place experimental physics research investigating whether the discrete quantity and packing density of concealed objects inside a sealed container can be inferred purely from transient mechanical impulse sound spectra.",
+        "Constructed an automated solenoid excitation test rig to generate repeatable acoustic impulses. Formulated an analytical Gaussian impulse-momentum energy dissipation model linking empty container volume fraction to decibel loudness.",
+        "Collaborated with Dr. Manoranjan Dash (former NUS/NTU faculty) to scale the physical model into a deep learning pipeline using Fast Fourier Transforms (FFT), MFCC spectral features, and 1D-CNN architectures—achieving 99.3% test classification accuracy."
+      ],
       "architecture": [
         "Experimental Rig: Repeatable solenoid excitation mechanism with calibrated acoustic microphone array and Audacity audio capture.",
         "Feature Pipeline: Fast Fourier Transform (FFT) spectral centroid, roll-off, zero-crossing rate, and mel-frequency cepstral coefficients (MFCCs).",
-        "Model Benchmarking: Random Forest and Multi-Layer Perceptron regressors mapped to void ratio distributions."
+        "Model Benchmarking: 1D-CNN, Random Forest, and Multi-Layer Perceptron regressors mapped to void ratio distributions."
       ],
       "tags": [
-        "Acoustic Sensing",
-        "DSP",
-        "FFT",
-        "Machine Learning",
-        "Physics Modeling",
-        "Python"
+        "PyTorch",
+        "Librosa",
+        "1D-CNN",
+        "Acoustic DSP",
+        "99.3% Accuracy"
       ],
-      "links": {
-        "paper": "#research"
-      }
-    },
-    {
-      "id": "intelligent-weather-station",
-      "title": "Intelligent Weather Station (IWS)",
-      "role": "Lead Hardware Engineer",
-      "timeline": "May 2025",
-      "category": "iot",
-      "tagline": "Wind-Tunnel Calibrated IoT Meteorological Station with Aerodynamic Sensing",
-      "badge": "Plaksha YTS Capstone",
-      "summary": "Interdisciplinary IoT meteorological station combining multi-sensor microclimate data acquisition with empirical aerodynamic calibration in a wind tunnel.",
-      "metrics": [
+      "externalLinks": [
+        { "label": "Read Alpha Science Paper (Drive PDF)", "url": "https://drive.google.com/drive/folders/YOUR_ACOUSTIC_PAPER_LINK" },
+        { "label": "View LOR from Dr. M. Dash (Drive)", "url": "https://drive.google.com/drive/folders/YOUR_NUS_LOR_LINK" },
+        { "label": "GitHub Repository", "url": "https://github.com/shreeanshbansal" }
+      ],
+      "documents": [
         {
-          "label": "Wind Tunnel Testing",
-          "value": "Calibrated",
-          "detail": "Aerodynamic drag & velocity curves"
+          "type": "Research Paper (PDF)",
+          "badge": "1st Place Winner",
+          "title": "Acoustic Signature Quantification of Concealed Enclosed Objects",
+          "subtitle": "Alpha Science Research Competition (Physics Fight)",
+          "description": "Complete physics manuscript detailing the impulse-momentum derivation, FFT spectrograms, and cross-geometry generalization.",
+          "url": "https://drive.google.com/drive/folders/YOUR_ACOUSTIC_PAPER_LINK",
+          "buttonText": "Open Research Paper (PDF)"
         },
         {
-          "label": "Sensors",
-          "value": "Anemometer, MQ-135, DHT",
-          "detail": "Hall Effect & optical rotary encoders"
+          "type": "LOR & Endorsement",
+          "badge": "Letter of Recommendation",
+          "title": "Letter of Recommendation — Dr. Manoranjan Dash",
+          "subtitle": "Former Faculty, National University of Singapore (NUS) & NTU",
+          "description": "Formal recommendation recognizing Shreeansh as Top Achiever at NUS AIYA and co-researcher on AcousticAI's 99.3% accuracy ML pipeline.",
+          "url": "https://drive.google.com/drive/folders/YOUR_NUS_LOR_LINK",
+          "buttonText": "View LOR (Google Drive)"
         },
         {
-          "label": "Platform",
-          "value": "Arduino & Python",
-          "detail": "Real-time telemetry dashboard"
+          "type": "Presentation",
+          "badge": "Physics Fight Deck",
+          "title": "AcousticAI Defense & Spectral Feature Engineering Slides",
+          "subtitle": "Alpha Science Competition Presentation",
+          "description": "Slide deck presenting experimental setup, Gaussian curve fitting, and 1D-CNN spectrograms.",
+          "url": "https://drive.google.com/drive/folders/YOUR_ACOUSTIC_DECK_LINK",
+          "buttonText": "View Presentation (Drive)"
         }
       ],
-      "description": "Developed during the Young Technology Scholars fellowship at Plaksha University. Engineered an integrated weather station with rotary encoders, Hall effect magnetic sensors, and particulate telemetry. Calibrated the physical apparatus inside Plaksha's engineering wind tunnel to generate empirical correction curves for velocity measurement. Showcased to faculty on Demo Day.",
-      "architecture": [
-        "Sensors: Arduino Uno / Nano, DHT22, MQ-135 gas sensor, Hall Effect rotational speed sensor, precision optical encoder.",
-        "Calibration: Aerodynamic wind tunnel velocity sweeps correlating pulse frequency with laminar air velocities."
+      "photos": [
+        {
+          "title": "FFT Spectrogram & Resonant Frequency Analysis",
+          "caption": "Spectral centroid and harmonic roll-off shifts across varying container fill fractions.",
+          "src": "assets/images/acousticai.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_ACOUSTIC_PHOTO_1"
+        },
+        {
+          "title": "Automated Solenoid Impulse Test Rig",
+          "caption": "Calibrated mechanical excitation apparatus for repeatable acoustic capture.",
+          "src": "assets/images/acousticai.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_ACOUSTIC_PHOTO_2"
+        }
       ],
-      "tags": [
-        "Arduino",
-        "Embedded C++",
-        "Wind Tunnel",
-        "Sensor Calibration",
-        "IoT"
-      ],
-      "links": {
-        "presentation": "#education"
-      }
+      "awards": [
+        {
+          "title": "Winner (1st Place Globally)",
+          "organization": "Alpha Science Research Competition",
+          "year": "2024",
+          "badge": "1st Place Award",
+          "detail": "Awarded 1st Place in the Physics Fight division for experimental acoustics and mathematical modeling.",
+          "url": "https://drive.google.com/drive/folders/YOUR_ALPHA_CERT_LINK"
+        },
+        {
+          "title": "Top Achiever Award",
+          "organization": "National University of Singapore (NUS) AIYA Fellowship",
+          "year": "2023",
+          "badge": "Top Achiever",
+          "detail": "Recognized as the top-performing student researcher in machine learning and neural networks.",
+          "url": "https://drive.google.com/drive/folders/YOUR_NUS_CERT_LINK"
+        }
+      ]
     },
     {
       "id": "bizforher",
       "title": "BizForHer Platform",
+      "image": "assets/images/bizforher.svg",
       "role": "Chief Technology Officer (CTO)",
       "timeline": "2026 \u2013 2027",
       "category": "ai",
       "tagline": "High-Throughput Competition & Entrepreneurship Platform Backed by NITI Aayog",
-      "badge": "NITI Aayog Backed \u2022 $2.5M+",
+      "badge": "$2.5M+ Raised \u2022 NITI Aayog",
       "summary": "A nation-wide digital competition and learning infrastructure supporting young female entrepreneurs across India, mobilizing over $2.5 million in capital, awards, and scholarships.",
       "metrics": [
         {
@@ -460,22 +772,61 @@ const PORTFOLIO_DATA = {
         }
       ],
       "description": "Serving as CTO for BizForHer, a student-led venture platform endorsed by NITI Aayog. Architected and maintained the web architecture and dedicated competition-hosting portal managing thousands of multi-round application dossiers, evaluations, and judge rubrics. Developing an intelligent AI chatbot delivering interactive pre-competition business curriculum and real-time applicant onboarding.",
+      "detailedText": [
+        "As Chief Technology Officer of BizForHer, Shreeansh architected and scaled the digital infrastructure for one of India's largest youth entrepreneurship initiatives endorsed by NITI Aayog.",
+        "Engineered the full-stack competition portal handling multi-round venture submissions, blinded judge rubric evaluations, and automated investor matchmaking for 20,000+ participants across 25 states.",
+        "Built an AI curriculum mentor bot trained on Lean Canvas, unit economics, and pitch structuring to guide first-time female founders from rural and tier-2/3 cities, helping mobilize over $2.5M+ in grants, scholarships, and seed capital."
+      ],
       "architecture": [
-        "Web Stack: Modern reactive frontend architecture with robust database backend for managing thousands of concurrent submissions.",
+        "Web Stack: Modern reactive frontend architecture with robust PostgreSQL database backend for managing thousands of concurrent submissions.",
         "Workflow Engine: Multi-stage judging portal with automated rubric scoring, blinded dossier reviews, and role-based access control.",
         "AI Curriculum Bot: Interactive generative mentor trained on startup fundamentals, Lean Canvas, and unit economics."
       ],
       "tags": [
-        "Full-Stack",
-        "CTO Leadership",
-        "EdTech",
-        "AI Bot",
-        "Scalable Architecture",
-        "NITI Aayog"
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe API",
+        "Impact Tech"
       ],
-      "links": {
-        "impact": "#leadership"
-      }
+      "externalLinks": [
+        { "label": "View NITI Aayog Endorsement (Drive)", "url": "https://drive.google.com/drive/folders/YOUR_BIZFORHER_DRIVE_LINK" },
+        { "label": "Platform Architecture Deck (Drive)", "url": "https://drive.google.com/drive/folders/YOUR_BIZFORHER_DECK_LINK" }
+      ],
+      "documents": [
+        {
+          "type": "LOR & Endorsement",
+          "badge": "NITI Aayog",
+          "title": "NITI Aayog Endorsement & Impact Report",
+          "subtitle": "20,000+ Participants Across 25 Indian States",
+          "description": "Official endorsement and impact documentation detailing $2.5M+ mobilized in scholarships, grants, and venture funding.",
+          "url": "https://drive.google.com/drive/folders/YOUR_BIZFORHER_DRIVE_LINK",
+          "buttonText": "View Endorsement (Drive)"
+        },
+        {
+          "type": "Presentation",
+          "badge": "CTO Architecture",
+          "title": "BizForHer Full-Stack Portal & AI Mentor Bot Overview",
+          "subtitle": "High-Concurrency Competition Hosting Infrastructure",
+          "description": "Technical overview of the multi-round evaluation engine, database schema, and bilingual onboarding pipeline.",
+          "url": "https://drive.google.com/drive/folders/YOUR_BIZFORHER_DECK_LINK",
+          "buttonText": "Open Technical Deck (Drive)"
+        }
+      ],
+      "photos": [
+        {
+          "title": "BizForHer Competition & Evaluation Portal",
+          "caption": "Multi-stage application dashboard and automated judge rubric workflow.",
+          "src": "assets/images/bizforher.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_BIZFORHER_PHOTO_1"
+        },
+        {
+          "title": "National Pitch Showcase & Founder Cohort",
+          "caption": "Empowering 20,000+ young women entrepreneurs across 25 states.",
+          "src": "assets/images/bizforher.svg",
+          "driveUrl": "https://drive.google.com/drive/folders/YOUR_BIZFORHER_PHOTO_2"
+        }
+      ]
     }
   ],
   "research": [

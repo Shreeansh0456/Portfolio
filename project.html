@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title id="pageTitle">Project Case Study — Shreeansh Bansal</title>
+  <meta name="description" content="Detailed engineering case study, system architecture, media, publications, and recognition — Shreeansh Bansal."/>
+  <link rel="icon" href="assets/images/profile.svg" type="image/svg+xml"/>
+
+  <!-- Google Fonts: Geist & Geist Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Framework Styles -->
+  <link rel="stylesheet" href="assets/css/aarav-tailwind.css">
+  <link rel="stylesheet" href="assets/css/aarav-extra.css">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/clone.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Geist", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+            mono: ["Geist Mono", "monospace"]
+          },
+          colors: {
+            background: "var(--background)",
+            foreground: "var(--foreground)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="antialiased selection:bg-blue-500/20 selection:text-blue-300">
+
+  <!-- ==========================================================================
+       PROFESSIONAL AMBIENT BACKGROUND & PRECISION GRID
+       ========================================================================== -->
+  <div class="site-bg-ambient"></div>
+  <div class="site-bg-grid"></div>
+
+  <div class="relative flex flex-col items-center overflow-x-hidden w-full z-10 min-h-screen justify-between">
+
+    <!-- ==========================================================================
+         TOP NAVBAR
+         ========================================================================== -->
+    <header class="site-header">
+      <div class="site-header-inner">
+        
+        <div class="flex-shrink-0">
+          <a class="text-xl md:text-2xl font-bold tracking-tight text-white hover:opacity-85 transition flex items-center gap-2.5" href="index.html#home">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></span>
+            Shreeansh Bansal
+          </a>
+        </div>
+
+        <nav class="nav-desktop">
+          <a class="nav-pill-btn" href="index.html#home">Home</a>
+          <a class="nav-pill-btn" href="index.html#projects">Projects</a>
+          <a class="nav-pill-btn" href="index.html#research">Research</a>
+          <a class="nav-pill-btn" href="index.html#experience">Experience</a>
+          <a class="nav-pill-btn" href="index.html#skills">Skills</a>
+          <a class="nav-pill-btn" href="index.html#honors">Honors</a>
+          <a class="nav-pill-btn nav-pill-cv" href="resume.html">
+            <span>CV</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </nav>
+
+        <button id="mobileToggle" class="nav-mobile-btn" aria-label="Toggle Navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div id="mobileDrawer" class="hidden px-6 pb-6 pt-3 bg-[#090a0f]/95 border-b border-white/[0.08] space-y-2 backdrop-blur-2xl">
+        <a class="block w-full px-4 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-sm font-medium text-zinc-200 hover:text-white hover:bg-white/[0.1] transition" href="index.html#home">Home</a>
+        <a class="block w-full px-4 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-sm font-medium text-zinc-200 hover:text-white hover:bg-white/[0.1] transition" href="index.html#projects">Projects</a>
+        <a class="block w-full px-4 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-sm font-medium text-zinc-200 hover:text-white hover:bg-white/[0.1] transition" href="index.html#research">Research</a>
+        <a class="block w-full px-4 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-sm font-medium text-zinc-200 hover:text-white hover:bg-white/[0.1] transition" href="index.html#experience">Experience</a>
+        <a class="block w-full px-4 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-sm font-medium text-zinc-200 hover:text-white hover:bg-white/[0.1] transition" href="index.html#skills">Skills</a>
+        <a class="block w-full px-4 py-2.5 rounded-xl bg-white/[0.05] border border-white/[0.08] text-sm font-medium text-zinc-200 hover:text-white hover:bg-white/[0.1] transition" href="index.html#honors">Honors</a>
+        <a class="block w-full px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600/30 to-cyan-600/30 border border-blue-500/40 text-sm font-semibold text-blue-200 hover:text-white transition" href="resume.html">Curriculum Vitae &nearr;</a>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         DYNAMIC PROJECT CASE STUDY CONTAINER
+         ========================================================================== -->
+    <main id="projectPageRoot" class="w-full max-w-7xl mx-auto pt-28 pb-16 px-6 md:px-12">
+      <!-- Populated dynamically from window.PORTFOLIO_DATA.ventures -->
+    </main>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="w-full max-w-7xl mx-auto px-6 py-12 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-400 gap-4">
+      <div>
+        &copy; 2026 Shreeansh Bansal. Built with precision and craft.
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="index.html#projects" class="hover:text-white transition">&larr; All Projects</a>
+        <a href="resume.html" class="hover:text-white transition">Curriculum Vitae</a>
+        <a href="mailto:shreeansh0479@gmail.com" class="hover:text-white transition">Contact</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       LIGHTBOX OVERLAY FOR PHOTOS & NEWSPAPER CUTOUTS
+       ========================================================================== -->
+  <div id="mediaLightbox" class="modal-overlay" onclick="closeLightbox(event)">
+    <div class="modal-content-box max-w-5xl p-4 md:p-6" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" aria-label="Close preview" class="modal-close-icon-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div id="lightboxBody" class="flex flex-col items-center"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING THEME TOGGLE BUTTON
+       ========================================================================== -->
+  <button id="themeToggleBtn" aria-label="Toggle theme" class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-zinc-900/90 border border-white/[0.12] text-white backdrop-blur-md shadow-2xl hover:scale-105 transition cursor-pointer">
+    <svg id="themeMoonIcon" class="block dark:hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    <svg id="themeSunIcon" class="hidden dark:block" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+  </button>
+
+  <!-- Data & Dynamic Page Controller -->
+  <script src="assets/js/data.js"></script>
+  <script>
+    // 1. Theme Management
+    function initTheme() {
+      const saved = localStorage.getItem("theme") || "dark";
+      setTheme(saved);
+      document.getElementById("themeToggleBtn").addEventListener("click", () => {
+        const isDark = document.documentElement.classList.contains("dark");
+        setTheme(isDark ? "light" : "dark");
+      });
+    }
+
+    function setTheme(t) {
+      if (t === "dark") {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+      localStorage.setItem("theme", t);
+    }
+    initTheme();
+
+    // 2. Mobile Drawer
+    const drawer = document.getElementById("mobileDrawer");
+    document.getElementById("mobileToggle").addEventListener("click", () => {
+      drawer.classList.toggle("hidden");
+    });
+
+    // 3. Helper: Escape HTML safely
+    function escapeHtml(str) {
+      return String(str || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // 4. Helper: Convert Google Drive / YouTube Links to Embeddable URLs
+    function toEmbedUrl(url) {
+      if (!url) return "";
+      const driveMatch = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+      if (driveMatch && driveMatch[1]) {
+        return `https://drive.google.com/file/d/${driveMatch[1]}/preview`;
+      }
+      const ytMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+      if (ytMatch && ytMatch[1]) {
+        return `https://www.youtube.com/embed/${ytMatch[1]}`;
+      }
+      return url;
+    }
+
+    // 5. Carousel Manual & Auto-Scroll Controller
+    const autoScrollTimers = {};
+
+    function scrollCarousel(trackId, direction) {
+      const track = document.getElementById(trackId);
+      if (!track) return;
+      const slide = track.querySelector(".carousel-slide-item");
+      const gap = 20;
+      const scrollStep = slide ? slide.offsetWidth + gap : track.clientWidth * 0.85;
+      const maxScrollLeft = track.scrollWidth - track.clientWidth;
+
+      if (direction > 0 && track.scrollLeft >= maxScrollLeft - 15) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+      } else if (direction < 0 && track.scrollLeft <= 15) {
+        track.scrollTo({ left: maxScrollLeft, behavior: "smooth" });
+      } else {
+        track.scrollBy({ left: direction * scrollStep, behavior: "smooth" });
+      }
+    }
+    window.scrollCarousel = scrollCarousel;
+
+    function initAutoMovingCarousel(trackId, intervalMs) {
+      const track = document.getElementById(trackId);
+      if (!track) return;
+
+      const startTimer = () => {
+        stopTimer();
+        autoScrollTimers[trackId] = setInterval(() => {
+          scrollCarousel(trackId, 1);
+        }, intervalMs);
+      };
+
+      const stopTimer = () => {
+        if (autoScrollTimers[trackId]) {
+          clearInterval(autoScrollTimers[trackId]);
+          autoScrollTimers[trackId] = null;
+        }
+      };
+
+      track.addEventListener("mouseenter", stopTimer);
+      track.addEventListener("mouseleave", startTimer);
+      track.addEventListener("touchstart", stopTimer, { passive: true });
+      track.addEventListener("touchend", startTimer, { passive: true });
+
+      startTimer();
+    }
+
+    // 6. Lightbox for Photos & Newspaper Cutouts
+    function openLightbox(imgSrc, title, subtitle) {
+      const box = document.getElementById("mediaLightbox");
+      const body = document.getElementById("lightboxBody");
+      body.innerHTML = `
+        <img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(title)}" class="max-h-[78vh] w-auto rounded-xl border border-white/[0.1] object-contain mb-4"/>
+        <div class="text-center">
+          <div class="text-base font-bold text-white">${escapeHtml(title)}</div>
+          ${subtitle ? `<div class="text-xs text-zinc-400 mt-0.5">${escapeHtml(subtitle)}</div>` : ""}
+        </div>
+      `;
+      box.classList.add("active");
+    }
+
+    function closeLightbox(e) {
+      if (!e || e.target.id === "mediaLightbox") {
+        document.getElementById("mediaLightbox").classList.remove("active");
+      }
+    }
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLightbox();
+    });
+
+    // 7. Document Icon Helper (PDF Paper, Presentation, LOR, Certificate)
+    function getDocIcon(type) {
+      const t = (type || "").toLowerCase();
+      if (t.includes("pdf") || t.includes("paper") || t.includes("research")) {
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>`;
+      }
+      if (t.includes("presentation") || t.includes("deck") || t.includes("slides")) {
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>`;
+      }
+      if (t.includes("lor") || t.includes("letter") || t.includes("endorsement")) {
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>`;
+      }
+      return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>`;
+    }
+
+    // 8. Render Project Page
+    function renderProjectPage() {
+      const root = document.getElementById("projectPageRoot");
+      const params = new URLSearchParams(window.location.search);
+      const projectId = params.get("id") || "aerisense";
+
+      const ventures = (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.ventures) || [];
+      const projectIndex = ventures.findIndex(v => v.id === projectId);
+      const project = projectIndex !== -1 ? ventures[projectIndex] : ventures[0];
+
+      if (!project) {
+        root.innerHTML = `
+          <div class="portfolio-card p-8 text-center">
+            <h1 class="text-2xl font-bold text-white mb-2">Project Not Found</h1>
+            <p class="text-sm text-zinc-400 mb-6">The requested project could not be located.</p>
+            <a href="index.html#projects" class="btn-solid-white hero-btn-primary">Back to Projects</a>
+          </div>
+        `;
+        return;
+      }
+
+      document.title = `${project.title} — Shreeansh Bansal`;
+
+      // Previous & Next Project Navigation
+      const prevProject = ventures[(projectIndex - 1 + ventures.length) % ventures.length];
+      const nextProject = ventures[(projectIndex + 1) % ventures.length];
+
+      // Build Quick Action Links (Google Drive, Source Code, Paper, etc.)
+      const externalLinks = Array.isArray(project.externalLinks) ? project.externalLinks : [];
+      const actionButtonsHtml = externalLinks.map((lnk, idx) => `
+        <a href="${escapeHtml(lnk.url)}" target="_blank" rel="noopener" class="${idx === 0 ? 'card-btn-primary action-btn-primary' : 'card-btn-secondary action-btn-secondary'}">
+          <span>${escapeHtml(lnk.label)}</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      `).join("");
+
+      // Build Metrics Grid
+      const metricsHtml = (project.metrics || []).map(m => `
+        <div class="portfolio-card p-5 flex flex-col justify-between">
+          <div class="text-2xl md:text-3xl font-bold text-white font-mono">${escapeHtml(m.value)}</div>
+          <div class="mt-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-zinc-200">${escapeHtml(m.label)}</div>
+            ${m.detail ? `<div class="text-xs text-zinc-400 mt-0.5">${escapeHtml(m.detail)}</div>` : ""}
+          </div>
+        </div>
+      `).join("");
+
+      // Build Textual Deep-Dive & System Architecture
+      const paragraphs = Array.isArray(project.detailedText) && project.detailedText.length
+        ? project.detailedText
+        : [project.description || project.summary];
+
+      const textualHtml = paragraphs.map(p => `
+        <p class="text-sm md:text-base text-zinc-300 leading-relaxed mb-4 last:mb-0">${escapeHtml(p)}</p>
+      `).join("");
+
+      const architectureHtml = Array.isArray(project.architecture) && project.architecture.length ? `
+        <div class="portfolio-card p-6 md:p-8">
+          <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white mb-4">System Architecture &amp; Implementation</h3>
+          <ul class="space-y-3">
+            ${project.architecture.map(item => `
+              <li class="flex items-start gap-3 text-xs md:text-sm text-zinc-300 leading-relaxed">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 shrink-0"></span>
+                <span>${escapeHtml(item)}</span>
+              </li>
+            `).join("")}
+          </ul>
+        </div>
+      ` : "";
+
+      // Conditional Section 1: Direct Buttons for Research Paper, Pitch Deck & LOR (No Card Explanations)
+      const documents = Array.isArray(project.documents) ? project.documents : [];
+      const documentsSectionHtml = documents.length ? `
+        <section class="mt-10">
+          <div class="portfolio-card p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-5">
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold tracking-tight text-white">Research Papers, Pitch Deck &amp; LORs</h2>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+              ${documents.map((doc, idx) => `
+                <a href="${escapeHtml(doc.url || '#')}" target="_blank" rel="noopener" class="${idx === 0 ? 'card-btn-primary action-btn-primary' : 'card-btn-secondary action-btn-secondary'}">
+                  ${getDocIcon(doc.type)}
+                  <span>${escapeHtml(doc.buttonText || doc.title)}</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              `).join("")}
+            </div>
+          </div>
+        </section>
+      ` : "";
+
+      // Conditional Section 2: Videos (Local MP4, YouTube, or Google Drive Video Preview)
+      const videos = Array.isArray(project.videos) ? project.videos : [];
+      const videosSectionHtml = videos.length ? `
+        <section class="mt-12">
+          <div class="mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Video Demonstrations &amp; Walkthroughs</h2>
+            <p class="text-xs md:text-sm text-zinc-400 mt-1">Live hardware telemetry, computer vision tracking, and pitch recordings.</p>
+          </div>
+          <div class="grid grid-cols-1 ${videos.length > 1 ? 'lg:grid-cols-2' : ''} gap-6">
+            ${videos.map(v => {
+              const isDirectVideo = /\.(mp4|webm|ogg)$/i.test(v.url || "");
+              const embedSrc = toEmbedUrl(v.url);
+              return `
+                <div class="portfolio-card p-4 md:p-6 flex flex-col justify-between">
+                  <div>
+                    <div class="relative aspect-video rounded-xl overflow-hidden border border-white/[0.08] bg-black/40 mb-4">
+                      ${isDirectVideo ? `
+                        <video controls preload="metadata" poster="${escapeHtml(v.poster || project.image || '')}" class="w-full h-full object-cover">
+                          <source src="${escapeHtml(v.url)}" type="video/mp4"/>
+                        </video>
+                      ` : (v.url && v.url !== "#" ? `
+                        <iframe src="${escapeHtml(embedSrc)}" title="${escapeHtml(v.title)}" class="w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      ` : `
+                        <img src="${escapeHtml(v.poster || project.image || '')}" alt="${escapeHtml(v.title)}" class="w-full h-full object-cover opacity-80"/>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/50 p-4 text-center">
+                          <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30 mb-2">Video Link Ready for Google Drive</span>
+                          <span class="text-xs text-zinc-300">Add your Google Drive video link in <code class="font-mono">data.js</code></span>
+                        </div>
+                      `)}
+                    </div>
+                    <h3 class="text-base md:text-lg font-bold text-white">${escapeHtml(v.title)}</h3>
+                    ${v.caption ? `<p class="text-xs md:text-sm text-zinc-400 mt-1 leading-relaxed">${escapeHtml(v.caption)}</p>` : ""}
+                  </div>
+                  ${v.driveUrl ? `
+                    <div class="mt-4 pt-3 border-t border-white/[0.08]">
+                      <a href="${escapeHtml(v.driveUrl)}" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary text-xs">
+                        <span>Open Video in Google Drive &nearr;</span>
+                      </a>
+                    </div>
+                  ` : ""}
+                </div>
+              `;
+            }).join("")}
+          </div>
+        </section>
+      ` : "";
+
+      // Conditional Section 3: Auto-Moving Photo Gallery Carousel (2 to 3 Photos in View)
+      const photos = Array.isArray(project.photos) ? project.photos : [];
+      const photosSectionHtml = photos.length ? `
+        <section class="mt-12">
+          <div class="flex items-end justify-between gap-4 mb-6">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Photo Gallery &amp; Field Prototypes</h2>
+              <p class="text-xs md:text-sm text-zinc-400 mt-1">Auto-scrolling gallery &bull; Hover to pause or click any photo to enlarge.</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button type="button" onclick="scrollCarousel('photosCarouselTrack', -1)" class="carousel-nav-btn" aria-label="Previous photos">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" onclick="scrollCarousel('photosCarouselTrack', 1)" class="carousel-nav-btn" aria-label="Next photos">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="photosCarouselTrack" class="carousel-track-container">
+            ${photos.map(ph => `
+              <div class="carousel-slide-item ${photos.length === 2 ? 'carousel-slide-2col' : 'carousel-slide-3col'} portfolio-card p-4 flex flex-col justify-between group">
+                <div>
+                  <div class="relative aspect-video rounded-xl overflow-hidden mb-3 border border-white/[0.08] cursor-zoom-in" onclick="openLightbox('${escapeHtml(ph.src)}', '${escapeHtml(ph.title)}', '${escapeHtml(ph.caption || '')}')">
+                    <img src="${escapeHtml(ph.src)}" alt="${escapeHtml(ph.title)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
+                      Enlarge Photo
+                    </div>
+                  </div>
+                  <h4 class="text-sm font-bold text-white">${escapeHtml(ph.title)}</h4>
+                  ${ph.caption ? `<p class="text-xs text-zinc-400 mt-0.5 leading-relaxed">${escapeHtml(ph.caption)}</p>` : ""}
+                </div>
+                ${ph.driveUrl ? `
+                  <div class="mt-3 pt-2.5 border-t border-white/[0.08]">
+                    <a href="${escapeHtml(ph.driveUrl)}" target="_blank" rel="noopener" class="text-xs text-blue-400 hover:underline inline-flex items-center gap-1">
+                      <span>High-Res Drive Photo &nearr;</span>
+                    </a>
+                  </div>
+                ` : ""}
+              </div>
+            `).join("")}
+          </div>
+        </section>
+      ` : "";
+
+      // Conditional Section 4: Project Awards, Grants & Honours
+      const awards = Array.isArray(project.awards) ? project.awards : [];
+      const awardsSectionHtml = awards.length ? `
+        <section class="mt-12">
+          <div class="mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Awards, Endorsements &amp; Distinctions</h2>
+            <p class="text-xs md:text-sm text-zinc-400 mt-1">Honors, fellowships, and institutional recognition awarded to ${escapeHtml(project.title)}.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            ${awards.map(aw => `
+              <div class="portfolio-card p-5 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-2.5">
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">${escapeHtml(aw.badge || "Distinction")}</span>
+                    <span class="text-xs font-mono text-zinc-400">${escapeHtml(aw.year || "")}</span>
+                  </div>
+                  <h4 class="text-base font-bold text-white mb-1">${escapeHtml(aw.title)}</h4>
+                  <div class="text-xs font-medium text-blue-400 mb-2">${escapeHtml(aw.organization || "")}</div>
+                  ${aw.detail ? `<p class="text-xs text-zinc-300 leading-relaxed">${escapeHtml(aw.detail)}</p>` : ""}
+                </div>
+                ${aw.url ? `
+                  <div class="mt-4 pt-3 border-t border-white/[0.08]">
+                    <a href="${escapeHtml(aw.url)}" target="_blank" rel="noopener" class="text-xs font-semibold text-blue-400 hover:underline inline-flex items-center gap-1">
+                      <span>View Certificate / Proof (Drive) &nearr;</span>
+                    </a>
+                  </div>
+                ` : ""}
+              </div>
+            `).join("")}
+          </div>
+        </section>
+      ` : "";
+
+      // Conditional Section 5 (ALL THE WAY AT THE BOTTOM): Auto-Moving 3x-Larger Newspaper Cutouts Carousel (Publication Name on Top + Image Only)
+      const cutouts = Array.isArray(project.newspaperCutouts) ? project.newspaperCutouts : [];
+      const cutoutsSectionHtml = cutouts.length ? `
+        <section class="mt-14 pt-10 border-t border-white/[0.08]">
+          <div class="flex items-end justify-between gap-4 mb-6">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Newspaper Cutouts &amp; Press Coverage</h2>
+              <p class="text-xs md:text-sm text-zinc-400 mt-1">Auto-scrolling press cutouts &bull; Hover to pause or click any cutout to view full screen.</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button type="button" onclick="scrollCarousel('newspaperCarouselTrack', -1)" class="carousel-nav-btn" aria-label="Previous newspaper cutout">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" onclick="scrollCarousel('newspaperCarouselTrack', 1)" class="carousel-nav-btn" aria-label="Next newspaper cutout">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="newspaperCarouselTrack" class="carousel-track-container">
+            ${cutouts.map(cut => `
+              <div class="carousel-slide-item carousel-slide-newspaper-3x portfolio-card p-5 md:p-7 flex flex-col group">
+                <!-- Publication Name Prominent on Top -->
+                <div class="flex items-center justify-between gap-3 pb-4 mb-4 border-b border-white/[0.08]">
+                  <span class="px-3.5 py-1 rounded-full text-xs md:text-sm font-bold tracking-wider uppercase bg-amber-500/10 text-amber-300 border border-amber-500/25">
+                    ${escapeHtml(cut.publication)}
+                  </span>
+                  ${cut.date ? `<span class="text-xs md:text-sm font-mono text-zinc-400">${escapeHtml(cut.date)}</span>` : ""}
+                </div>
+
+                <!-- 3x Larger Newspaper Cutout Image Only -->
+                <div class="newspaper-cutout-frame-3x relative rounded-2xl overflow-hidden border border-white/[0.1] cursor-zoom-in" onclick="openLightbox('${escapeHtml(cut.image || project.image || '')}', '${escapeHtml(cut.publication)}', '${escapeHtml(cut.date || '')}')">
+                  <img src="${escapeHtml(cut.image || project.image || '')}" alt="${escapeHtml(cut.publication)}" class="w-full h-full object-contain bg-black/30 group-hover:scale-[1.02] transition-transform duration-500"/>
+                  <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-sm font-semibold">
+                    Click to Expand Full Cutout
+                  </div>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </section>
+      ` : "";
+
+      // Assemble Full Page (Newspapers placed all the way at the bottom)
+      root.innerHTML = `
+        <!-- Top Back Navigation Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+          <a href="index.html#projects" class="btn-translucent">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back to Featured Projects</span>
+          </a>
+          <div class="flex items-center gap-2">
+            <a href="project.html?id=${encodeURIComponent(prevProject.id)}" class="nav-pill-btn text-xs" title="Previous: ${escapeHtml(prevProject.title)}">
+              &larr; ${escapeHtml(prevProject.title)}
+            </a>
+            <a href="project.html?id=${encodeURIComponent(nextProject.id)}" class="nav-pill-btn text-xs" title="Next: ${escapeHtml(nextProject.title)}">
+              ${escapeHtml(nextProject.title)} &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Hero Banner -->
+        <div class="portfolio-card p-6 md:p-10 mb-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-4">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  ${escapeHtml(project.badge)}
+                </span>
+                <span class="hero-status-pill font-mono text-xs">
+                  ${escapeHtml(project.role)} &bull; ${escapeHtml(project.timeline)}
+                </span>
+              </div>
+
+              <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+                ${escapeHtml(project.title)}
+              </h1>
+
+              <p class="text-base md:text-lg font-medium text-blue-400">
+                ${escapeHtml(project.tagline)}
+              </p>
+
+              <p class="text-sm md:text-base text-zinc-300 leading-relaxed">
+                ${escapeHtml(project.summary)}
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                ${(project.tags || []).map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join("")}
+              </div>
+
+              ${actionButtonsHtml ? `
+                <div class="flex flex-wrap items-center gap-3 pt-3">
+                  ${actionButtonsHtml}
+                </div>
+              ` : ""}
+            </div>
+
+            <div class="lg:col-span-5">
+              <div class="relative aspect-video rounded-2xl overflow-hidden border border-white/[0.1] shadow-2xl cursor-zoom-in" onclick="openLightbox('${escapeHtml(project.image || '')}', '${escapeHtml(project.title)}', '${escapeHtml(project.tagline)}')">
+                <img src="${escapeHtml(project.image || '')}" alt="${escapeHtml(project.title)}" class="w-full h-full object-cover"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Metrics Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          ${metricsHtml}
+        </div>
+
+        <!-- Overview & System Architecture Two-Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+          <div class="portfolio-card p-6 md:p-8">
+            <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white mb-4">Project Overview &amp; Field Impact</h3>
+            ${textualHtml}
+          </div>
+          ${architectureHtml}
+        </div>
+
+        <!-- Direct Action Buttons for Research Paper, Pitch Deck & LOR -->
+        ${documentsSectionHtml}
+
+        <!-- Videos, Auto-Moving Photos Carousel & Awards -->
+        ${videosSectionHtml}
+        ${photosSectionHtml}
+        ${awardsSectionHtml}
+
+        <!-- Auto-Moving 3x Larger Newspaper Cutouts Carousel (All the way at the bottom) -->
+        ${cutoutsSectionHtml}
+
+        <!-- Bottom Project Pagination -->
+        <div class="mt-14 pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <a href="project.html?id=${encodeURIComponent(prevProject.id)}" class="btn-translucent w-full sm:w-auto justify-center">
+            <span>&larr; Previous: ${escapeHtml(prevProject.title)}</span>
+          </a>
+          <a href="index.html#projects" class="card-btn-primary action-btn-primary w-full sm:w-auto justify-center">
+            <span>View All Projects</span>
+          </a>
+          <a href="project.html?id=${encodeURIComponent(nextProject.id)}" class="btn-translucent w-full sm:w-auto justify-center">
+            <span>Next: ${escapeHtml(nextProject.title)} &rarr;</span>
+          </a>
+        </div>
+      `;
+
+      // Start Auto-Movement on both carousels after DOM render
+      if (photos.length > 1) {
+        initAutoMovingCarousel("photosCarouselTrack", 3000);
+      }
+      if (cutouts.length > 1) {
+        initAutoMovingCarousel("newspaperCarouselTrack", 3500);
+      }
+    }
+
+    renderProjectPage();
+  </script>
+</body>
+</html>

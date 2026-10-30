@@ -181,15 +181,17 @@
         <!-- 1. AeriSense -->
         <article class="portfolio-card p-5 md:p-7 flex flex-col justify-between h-full group">
           <div>
-            <div class="relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08] cursor-zoom-in" onclick="openModal('aerisense')">
+            <a href="project.html?id=aerisense" class="block relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08]">
               <img src="assets/images/aerisense.svg" alt="AeriSense" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"/>
-              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold backdrop-blur-xs">
-                View System Architecture &rarr;
+              <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold backdrop-blur-xs">
+                View Project Page &rarr;
               </div>
-            </div>
+            </a>
             
             <div class="flex items-center justify-between gap-2 mb-2">
-              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">AeriSense</h3>
+              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                <a href="project.html?id=aerisense" class="hover:opacity-85 transition">AeriSense</a>
+              </h3>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Accepted @ Springer LNNS</span>
             </div>
 
@@ -207,29 +209,31 @@
           </div>
 
           <div class="card-actions-wrap">
-            <a href="#research" class="card-btn-primary action-btn-primary">
+            <a href="project.html?id=aerisense" class="card-btn-primary action-btn-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line></svg>
+              <span>Explore Project</span>
+            </a>
+            <a href="#research" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
               <span>Read Paper</span>
             </a>
-            <button onclick="openModal('aerisense')" class="card-btn-secondary action-btn-secondary">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line></svg>
-              <span>System Specs</span>
-            </button>
           </div>
         </article>
 
         <!-- 2. ClearCall -->
         <article class="portfolio-card p-5 md:p-7 flex flex-col justify-between h-full group">
           <div>
-            <div class="relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08] cursor-zoom-in" onclick="openModal('clearcall')">
+            <a href="project.html?id=clearcall" class="block relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08]">
               <img src="assets/images/clearcall.svg" alt="ClearCall" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"/>
-              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
-                View Tracking Demonstration &rarr;
+              <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
+                View Project Page &rarr;
               </div>
-            </div>
+            </a>
 
             <div class="flex items-center justify-between gap-2 mb-2">
-              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">ClearCall</h3>
+              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                <a href="project.html?id=clearcall" class="hover:opacity-85 transition">ClearCall</a>
+              </h3>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">UC Berkeley M.E.T.</span>
             </div>
 
@@ -247,10 +251,10 @@
           </div>
 
           <div class="card-actions-wrap">
-            <button onclick="openModal('clearcall')" class="card-btn-primary action-btn-primary">
+            <a href="project.html?id=clearcall" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-              <span>Pitch &amp; Demo</span>
-            </button>
+              <span>Pitch &amp; Case Study</span>
+            </a>
             <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
@@ -261,15 +265,17 @@
         <!-- 3. BeeWise -->
         <article class="portfolio-card p-5 md:p-7 flex flex-col justify-between h-full group">
           <div>
-            <div class="relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08] cursor-zoom-in" onclick="openModal('beewise')">
+            <a href="project.html?id=beewise" class="block relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08]">
               <img src="assets/images/beewise.svg" alt="BeeWise" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"/>
-              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
-                View Colony Simulation Engine &rarr;
+              <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
+                View Project Page &rarr;
               </div>
-            </div>
+            </a>
 
             <div class="flex items-center justify-between gap-2 mb-2">
-              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">BeeWise</h3>
+              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                <a href="project.html?id=beewise" class="hover:opacity-85 transition">BeeWise</a>
+              </h3>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Colony Survival Algorithm</span>
             </div>
 
@@ -287,10 +293,10 @@
           </div>
 
           <div class="card-actions-wrap">
-            <button onclick="openModal('beewise')" class="card-btn-primary action-btn-primary">
+            <a href="project.html?id=beewise" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-              <span>Simulation Engine</span>
-            </button>
+              <span>Simulation &amp; Specs</span>
+            </a>
             <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
@@ -301,15 +307,17 @@
         <!-- 4. SignBridge -->
         <article class="portfolio-card p-5 md:p-7 flex flex-col justify-between h-full group">
           <div>
-            <div class="relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08] cursor-zoom-in" onclick="openModal('signbridge')">
+            <a href="project.html?id=signbridge" class="block relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08]">
               <img src="assets/images/signbridge.svg" alt="SignBridge" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"/>
-              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
-                View Swift Playground &rarr;
+              <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
+                View Project Page &rarr;
               </div>
-            </div>
+            </a>
 
             <div class="flex items-center justify-between gap-2 mb-2">
-              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">SignBridge</h3>
+              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                <a href="project.html?id=signbridge" class="hover:opacity-85 transition">SignBridge</a>
+              </h3>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">Apple WWDC Top 350</span>
             </div>
 
@@ -327,10 +335,10 @@
           </div>
 
           <div class="card-actions-wrap">
-            <button onclick="openModal('signbridge')" class="card-btn-primary action-btn-primary">
+            <a href="project.html?id=signbridge" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
               <span>Playground &amp; Demo</span>
-            </button>
+            </a>
             <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
@@ -341,15 +349,17 @@
         <!-- 5. AcousticAI -->
         <article class="portfolio-card p-5 md:p-7 flex flex-col justify-between h-full group">
           <div>
-            <div class="relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08] cursor-zoom-in" onclick="openModal('acousticai')">
+            <a href="project.html?id=acousticai" class="block relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08]">
               <img src="assets/images/acousticai.svg" alt="AcousticAI" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"/>
-              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
-                View Resonant Spectrograms &rarr;
+              <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
+                View Project Page &rarr;
               </div>
-            </div>
+            </a>
 
             <div class="flex items-center justify-between gap-2 mb-2">
-              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">AcousticAI</h3>
+              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                <a href="project.html?id=acousticai" class="hover:opacity-85 transition">AcousticAI</a>
+              </h3>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Alpha Science 1st Prize</span>
             </div>
 
@@ -367,10 +377,10 @@
           </div>
 
           <div class="card-actions-wrap">
-            <button onclick="openModal('acousticai')" class="card-btn-primary action-btn-primary">
+            <a href="project.html?id=acousticai" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 10v3"></path><path d="M6 6v11"></path><path d="M10 3v18"></path><path d="M14 8v7"></path><path d="M18 5v13"></path><path d="M22 10v3"></path></svg>
-              <span>Model Architecture</span>
-            </button>
+              <span>Model &amp; Research</span>
+            </a>
             <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
@@ -381,15 +391,17 @@
         <!-- 6. BizForHer Platform -->
         <article class="portfolio-card p-5 md:p-7 flex flex-col justify-between h-full group">
           <div>
-            <div class="relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08] cursor-zoom-in" onclick="openModal('bizforher')">
+            <a href="project.html?id=bizforher" class="block relative aspect-video rounded-xl overflow-hidden mb-5 border border-white/[0.08]">
               <img src="assets/images/bizforher.svg" alt="BizForHer" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"/>
-              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
-                View Platform Infrastructure &rarr;
+              <div class="card-media-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold">
+                View Project Page &rarr;
               </div>
-            </div>
+            </a>
 
             <div class="flex items-center justify-between gap-2 mb-2">
-              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">BizForHer Platform</h3>
+              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white">
+                <a href="project.html?id=bizforher" class="hover:opacity-85 transition">BizForHer Platform</a>
+              </h3>
               <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20">$2.5M+ Raised • NITI Aayog</span>
             </div>
 
@@ -407,10 +419,10 @@
           </div>
 
           <div class="card-actions-wrap">
-            <button onclick="openModal('bizforher')" class="card-btn-primary action-btn-primary">
+            <a href="project.html?id=bizforher" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-              <span>Platform Portal</span>
-            </button>
+              <span>Platform Case Study</span>
+            </a>
             <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
@@ -967,18 +979,6 @@
     <svg id="themeSunIcon" class="hidden dark:block" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
   </button>
 
-  <!-- ==========================================================================
-       PROJECT MODAL OVERLAY
-       ========================================================================== -->
-  <div id="projectModal" class="modal-overlay" onclick="handleModalBackdrop(event)">
-    <div class="modal-content-box" onclick="event.stopPropagation()">
-      <button onclick="closeModal()" aria-label="Close modal" class="modal-close-icon-btn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-      <div id="modalBody"></div>
-    </div>
-  </div>
-
   <!-- Data & Script -->
   <script src="assets/js/data.js"></script>
   <script>
@@ -1016,55 +1016,10 @@
       drawer.classList.add("hidden");
     }
 
-    // Modal Handler
+    // Redirect any legacy openModal(id) calls to the dedicated project page
     function openModal(id) {
-      const data = (window.PORTFOLIO_DATA && window.PORTFOLIO_DATA.ventures) 
-        ? window.PORTFOLIO_DATA.ventures.find(v => v.id === id)
-        : null;
-      if (!data) return;
-
-      const modal = document.getElementById("projectModal");
-      const body = document.getElementById("modalBody");
-
-      body.innerHTML = `
-        <div class="mb-4">
-          <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-300 border border-blue-500/20">${data.badge}</span>
-        </div>
-        <h2 class="text-3xl font-bold tracking-tight text-white mb-2">${data.title}</h2>
-        <div class="text-sm text-zinc-400 mb-6">${data.role} &bull; ${data.timeline}</div>
-        <p class="text-base text-zinc-300 mb-6 leading-relaxed">${data.summary}</p>
-        
-        <h4 class="text-xs uppercase tracking-widest text-zinc-400 mb-3">Key Highlights &amp; Metrics</h4>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-          ${data.metrics.map(m => `
-            <div class="p-3 rounded-xl bg-white/[0.05] border border-white/[0.08] modal-metric-cell">
-              <div class="text-lg font-bold text-white">${m.value}</div>
-              <div class="text-xs text-zinc-400">${m.label}${m.detail ? ` &bull; ${m.detail}` : ""}</div>
-            </div>
-          `).join("")}
-        </div>
-
-        <h4 class="text-xs uppercase tracking-widest text-zinc-400 mb-3">Technical Stack</h4>
-        <div class="flex flex-wrap gap-2 mb-6">
-          ${data.tags.map(t => `<span class="tag-pill text-xs">${t}</span>`).join("")}
-        </div>
-
-        <div class="pt-4 border-t border-white/[0.1] flex gap-3">
-          <button onclick="closeModal()" class="card-btn-primary action-btn-primary">Close</button>
-        </div>
-      `;
-      modal.classList.add("active");
+      window.location.href = `project.html?id=${encodeURIComponent(id)}`;
     }
-
-    function closeModal() {
-      document.getElementById("projectModal").classList.remove("active");
-    }
-    function handleModalBackdrop(e) {
-      if (e.target.id === "projectModal") closeModal();
-    }
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeModal();
-    });
     window.openProjectModal = openModal;
   </script>
 </body>
