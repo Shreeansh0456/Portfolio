@@ -12,15 +12,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- Core Styles -->
-  <link rel="stylesheet" href="assets/css/clone.css">
+  <!-- Framework Styles -->
   <link rel="stylesheet" href="assets/css/aarav-tailwind.css">
   <link rel="stylesheet" href="assets/css/aarav-extra.css">
+
+  <!-- Master Stylesheet (Loaded last so bulletproof overrides always win) -->
+  <link rel="stylesheet" href="assets/css/clone.css">
 
   <!-- Tailwind CDN for responsive utilities -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind = {
+    tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
@@ -37,7 +39,7 @@
     };
   </script>
 </head>
-<body class="antialiased bg-background text-zinc-100 selection:bg-blue-500/20 selection:text-blue-300">
+<body class="antialiased selection:bg-blue-500/20 selection:text-blue-300">
 
   <!-- ==========================================================================
        PROFESSIONAL AMBIENT BACKGROUND & PRECISION GRID
@@ -133,12 +135,12 @@
 
         <!-- Action Buttons Row -->
         <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2">
-          <a href="#projects" class="hero-btn-primary">
+          <a href="#projects" class="btn-solid-white hero-btn-primary">
             <span>View Projects</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </a>
 
-          <a href="mailto:shreeansh0479@gmail.com" class="hero-btn-secondary">
+          <a href="mailto:shreeansh0479@gmail.com" class="btn-translucent hero-btn-secondary">
             <span>Get in Touch</span>
           </a>
 
@@ -204,12 +206,12 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap gap-2.5 mt-auto pt-2">
-            <a href="#research" class="action-btn-primary">
+          <div class="card-actions-wrap">
+            <a href="#research" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
               <span>Read Paper</span>
             </a>
-            <button onclick="openModal('aerisense')" class="action-btn-secondary">
+            <button onclick="openModal('aerisense')" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line></svg>
               <span>System Specs</span>
             </button>
@@ -232,7 +234,7 @@
             </div>
 
             <p class="text-zinc-300 mb-5 leading-relaxed text-xs md:text-sm">
-              AI-powered sports technology venture developed during the UC Berkeley M.E.T. Innovation Academy. Architected an end-to-end edge AI platform using YOLO11, ByteTrack, OpenCV, Flask, and Python for low-latency player/ball tracking, automated boundary detection, sprint analytics, and instant replay generation from standard camera feeds. Defended before venture capitalists and Berkeley SkyDeck executives.
+              AI-powered sports technology venture developed during the UC Berkeley M.E.T. Innovation Academy. Architected an end-to-end Edge AI platform using YOLO11, ByteTrack, OpenCV, Flask, and Python for low-latency player/ball tracking, automated boundary detection, sprint analytics, and instant replay generation from standard camera feeds. Defended before venture capitalists and Berkeley SkyDeck executives.
             </p>
 
             <div class="flex flex-wrap gap-1.5 mb-6">
@@ -244,12 +246,12 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap gap-2.5 mt-auto pt-2">
-            <button onclick="openModal('clearcall')" class="action-btn-primary">
+          <div class="card-actions-wrap">
+            <button onclick="openModal('clearcall')" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               <span>Pitch &amp; Demo</span>
             </button>
-            <a href="https://github.com/shreeanshbansal" target="_blank" class="action-btn-secondary">
+            <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
             </a>
@@ -284,12 +286,12 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap gap-2.5 mt-auto pt-2">
-            <button onclick="openModal('beewise')" class="action-btn-primary">
+          <div class="card-actions-wrap">
+            <button onclick="openModal('beewise')" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
               <span>Simulation Engine</span>
             </button>
-            <a href="https://github.com/shreeanshbansal" target="_blank" class="action-btn-secondary">
+            <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
             </a>
@@ -324,12 +326,12 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap gap-2.5 mt-auto pt-2">
-            <button onclick="openModal('signbridge')" class="action-btn-primary">
+          <div class="card-actions-wrap">
+            <button onclick="openModal('signbridge')" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
               <span>Playground &amp; Demo</span>
             </button>
-            <a href="https://github.com/shreeanshbansal" target="_blank" class="action-btn-secondary">
+            <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
             </a>
@@ -364,12 +366,12 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap gap-2.5 mt-auto pt-2">
-            <button onclick="openModal('acousticai')" class="action-btn-primary">
+          <div class="card-actions-wrap">
+            <button onclick="openModal('acousticai')" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 10v3"></path><path d="M6 6v11"></path><path d="M10 3v18"></path><path d="M14 8v7"></path><path d="M18 5v13"></path><path d="M22 10v3"></path></svg>
               <span>Model Architecture</span>
             </button>
-            <a href="https://github.com/shreeanshbansal" target="_blank" class="action-btn-secondary">
+            <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
             </a>
@@ -404,12 +406,12 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap gap-2.5 mt-auto pt-2">
-            <button onclick="openModal('bizforher')" class="action-btn-primary">
+          <div class="card-actions-wrap">
+            <button onclick="openModal('bizforher')" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
               <span>Platform Portal</span>
             </button>
-            <a href="https://github.com/shreeanshbansal" target="_blank" class="action-btn-secondary">
+            <a href="https://github.com/shreeanshbansal" target="_blank" rel="noopener" class="card-btn-secondary action-btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
               <span>Source Code</span>
             </a>
@@ -452,8 +454,8 @@
             </p>
           </div>
 
-          <div class="mt-auto pt-2">
-            <a href="https://springer.com" target="_blank" class="action-btn-primary">
+          <div class="card-actions-wrap">
+            <a href="https://springer.com" target="_blank" rel="noopener" class="card-btn-primary action-btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               <span>Springer Nature Proceedings</span>
             </a>
@@ -478,8 +480,8 @@
             </p>
           </div>
 
-          <div class="mt-auto pt-2">
-            <span class="action-btn-secondary">
+          <div class="card-actions-wrap">
+            <span class="card-btn-secondary action-btn-secondary">
               <span>ISSC Conference Proceedings</span>
             </span>
           </div>
@@ -503,8 +505,8 @@
             </p>
           </div>
 
-          <div class="mt-auto pt-2">
-            <span class="action-btn-secondary">
+          <div class="card-actions-wrap">
+            <span class="card-btn-secondary action-btn-secondary">
               <span>Alpha Science 1st Prize Winner</span>
             </span>
           </div>
@@ -528,8 +530,8 @@
             </p>
           </div>
 
-          <div class="mt-auto pt-2">
-            <span class="action-btn-secondary">
+          <div class="card-actions-wrap">
+            <span class="card-btn-secondary action-btn-secondary">
               <span>Independent Field Thesis</span>
             </span>
           </div>
@@ -649,7 +651,7 @@
 
         <!-- 1. Python -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-blue-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-blue-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -660,7 +662,7 @@
 
         <!-- 2. C / C++ -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-cyan-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-cyan-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -671,7 +673,7 @@
 
         <!-- 3. Swift -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-amber-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-amber-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -682,18 +684,18 @@
 
         <!-- 4. ESP32 & FreeRTOS -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-emerald-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-emerald-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line></svg>
           </div>
           <div class="flex flex-col min-w-0">
-            <span class="text-xs md:text-sm font-bold text-white truncate">ESP32 &amp; RTOS</span>
+            <span class="text-xs md:text-sm font-bold text-white truncate">ESP32 &amp; FreeRTOS</span>
             <span class="text-[9px] uppercase tracking-wider text-zinc-400 truncate">Hardware</span>
           </div>
         </div>
 
         <!-- 5. PyTorch -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-rose-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-rose-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3"></path><path d="M12 19v3"></path><path d="M2 12h3"></path><path d="M19 12h3"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -704,7 +706,7 @@
 
         <!-- 6. OpenCV -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-indigo-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-indigo-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -715,7 +717,7 @@
 
         <!-- 7. YOLO11 & ByteTrack -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-purple-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-purple-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -726,18 +728,18 @@
 
         <!-- 8. React & Next.js -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-cyan-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-cyan-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
-            <span class="text-xs md:text-sm font-bold text-white truncate">React / Next</span>
+            <span class="text-xs md:text-sm font-bold text-white truncate">React / Next.js</span>
             <span class="text-[9px] uppercase tracking-wider text-zinc-400 truncate">Frontend</span>
           </div>
         </div>
 
         <!-- 9. Tailwind CSS -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-teal-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-teal-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -748,18 +750,18 @@
 
         <!-- 10. Flask & Node.js -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-green-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-green-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v2"></path><path d="M12 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
           </div>
           <div class="flex flex-col min-w-0">
-            <span class="text-xs md:text-sm font-bold text-white truncate">Flask &amp; Node</span>
+            <span class="text-xs md:text-sm font-bold text-white truncate">Flask &amp; Node.js</span>
             <span class="text-[9px] uppercase tracking-wider text-zinc-400 truncate">Backend</span>
           </div>
         </div>
 
         <!-- 11. CoreML -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-blue-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-blue-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 19 21 12 17 5 21 12 2"></polygon></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -770,7 +772,7 @@
 
         <!-- 12. PostgreSQL -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-indigo-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-indigo-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -781,7 +783,7 @@
 
         <!-- 13. Docker & Git -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-sky-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-sky-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5"></path></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -792,7 +794,7 @@
 
         <!-- 14. MATLAB & Simulink -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-orange-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-orange-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -803,7 +805,7 @@
 
         <!-- 15. Zemax Ray Optics -->
         <div class="flex items-center gap-3 p-3.5 rounded-2xl portfolio-card">
-          <div class="p-2 rounded-xl bg-white/[0.08] text-fuchsia-400 shrink-0">
+          <div class="p-2 rounded-xl bg-white/[0.08] text-fuchsia-400 shrink-0 skill-icon-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line></svg>
           </div>
           <div class="flex flex-col min-w-0">
@@ -970,7 +972,7 @@
        ========================================================================== -->
   <div id="projectModal" class="modal-overlay" onclick="handleModalBackdrop(event)">
     <div class="modal-content-box" onclick="event.stopPropagation()">
-      <button onclick="closeModal()" class="absolute top-6 right-6 p-2 rounded-xl text-zinc-400 hover:text-white bg-white/[0.08] border border-white/[0.1]">
+      <button onclick="closeModal()" aria-label="Close modal" class="modal-close-icon-btn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
       <div id="modalBody"></div>
@@ -1035,9 +1037,9 @@
         <h4 class="text-xs uppercase tracking-widest text-zinc-400 mb-3">Key Highlights &amp; Metrics</h4>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
           ${data.metrics.map(m => `
-            <div class="p-3 rounded-xl bg-white/[0.05] border border-white/[0.08]">
+            <div class="p-3 rounded-xl bg-white/[0.05] border border-white/[0.08] modal-metric-cell">
               <div class="text-lg font-bold text-white">${m.value}</div>
-              <div class="text-xs text-zinc-400">${m.label} &bull; ${m.detail}</div>
+              <div class="text-xs text-zinc-400">${m.label}${m.detail ? ` &bull; ${m.detail}` : ""}</div>
             </div>
           `).join("")}
         </div>
@@ -1048,7 +1050,7 @@
         </div>
 
         <div class="pt-4 border-t border-white/[0.1] flex gap-3">
-          <button onclick="closeModal()" class="action-btn-primary">Close</button>
+          <button onclick="closeModal()" class="card-btn-primary action-btn-primary">Close</button>
         </div>
       `;
       modal.classList.add("active");
@@ -1060,6 +1062,9 @@
     function handleModalBackdrop(e) {
       if (e.target.id === "projectModal") closeModal();
     }
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
     window.openProjectModal = openModal;
   </script>
 </body>

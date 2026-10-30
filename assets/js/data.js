@@ -33,7 +33,7 @@ const PORTFOLIO_DATA = {
       },
       {
         "label": "Funding & Platform Impact",
-        "value": ".5M+",
+        "value": "$2.5M+",
         "detail": "20,000+ participants reached as CTO of BizForHer"
       },
       {
@@ -147,19 +147,23 @@ const PORTFOLIO_DATA = {
       "metrics": [
         {
           "label": "Farm Field Studies",
-          "value": "150+"
+          "value": "150+",
+          "detail": "Surveyed across 17 cities in Rajasthan"
         },
         {
           "label": "Sensor Channels",
-          "value": "8+"
+          "value": "8+",
+          "detail": "CH\u2084, NH\u2083, CO\u2082, H\u2082S, VOCs & microclimate"
         },
         {
           "label": "Cities Piloted",
-          "value": "17 in RJ"
+          "value": "17 in RJ",
+          "detail": "14 commercial farm deployments"
         },
         {
           "label": "Paper Acceptance",
-          "value": "Springer LNNS"
+          "value": "Springer LNNS",
+          "detail": "ICT4SD 2026 Proceedings"
         }
       ],
       "description": "Conceived, designed, and engineered an end-to-end IoT platform integrating ESP32 with 8+ environmental sensors to continuously monitor methane (CH\u2084), ammonia (NH\u2083), carbon dioxide (CO\u2082), hydrogen sulphide (H\u2082S), temperature, humidity, VOCs, and air quality. Built multi-season datasets across summer, monsoon, and winter, utilizing statistical modeling to identify emission spikes and animal health risks. Piloted on 14 farms across Rajasthan. Authored a peer-reviewed research paper accepted at Springer's ICT4SD Conference and featured in national news outlets including The Times of India, Dainik Bhaskar, and Rajasthan Patrika.",
@@ -194,19 +198,23 @@ const PORTFOLIO_DATA = {
       "metrics": [
         {
           "label": "Detection Model",
-          "value": "YOLO11"
+          "value": "YOLO11",
+          "detail": "Custom player & ball tracking"
         },
         {
           "label": "Tracking Framework",
-          "value": "ByteTrack"
+          "value": "ByteTrack",
+          "detail": "Multi-object ID association"
         },
         {
           "label": "Latency",
-          "value": "Low Latency Edge"
+          "value": "Low Latency Edge",
+          "detail": "Real-time boundary & replay inference"
         },
         {
           "label": "Showcase",
-          "value": "Berkeley SkyDeck"
+          "value": "Berkeley SkyDeck",
+          "detail": "Defended before Silicon Valley VCs"
         }
       ],
       "description": "Architected and built an end-to-end AI officiating system using YOLO11, ByteTrack, OpenCV, Flask, and Python. Performs multi-object tracking, sprint-speed analytics, out-of-bounds boundary detection, bird's-eye view re-projection, and instant replay generation directly from standard video feeds without requiring multi-million dollar sensor rigs. Engineered a low-latency edge-inference pipeline. Presented and defended before a panel of institutional investors and tech executives at UC Berkeley's Haas / Engineering Shark Tank.",
@@ -242,19 +250,23 @@ const PORTFOLIO_DATA = {
       "metrics": [
         {
           "label": "Sensors / Hive",
-          "value": "6 Telemetry Channels"
+          "value": "6 Telemetry Channels",
+          "detail": "Dual HX711, MQ-9 & differential DHT22"
         },
         {
           "label": "Simulation Engine",
-          "value": "Monte Carlo"
+          "value": "Monte Carlo",
+          "detail": "Stochastic overwintering survival model"
         },
         {
           "label": "Target Species",
-          "value": "Apis mellifera"
+          "value": "Apis mellifera",
+          "detail": "14-day early collapse warning"
         },
         {
           "label": "Focus",
-          "value": "Colony Health"
+          "value": "Colony Health",
+          "detail": "Thermoregulation & mass tracking"
         }
       ],
       "description": "Engineered a smart beehive monitoring system integrating ESP32, dual MQ-9 gas sensors, dual DHT22 temperature-humidity probes, and dual HX711 load-cell weight sensors to continuously track colony mass, internal CO/CO\u2082 concentrations, and cluster thermoregulation. Created a Python-based stochastic Monte Carlo simulation framework incorporating time-series biological stress parameters to probabilistically model honey depletion and winter survival rates across thousands of climatic scenarios.",
@@ -287,19 +299,23 @@ const PORTFOLIO_DATA = {
       "metrics": [
         {
           "label": "Global Ranking",
-          "value": "Top 350 (~5k apps)"
+          "value": "Top 350 (~5k apps)",
+          "detail": "Apple WWDC Swift Student Challenge"
         },
         {
           "label": "Recognition",
-          "value": "Apple WWDC"
+          "value": "Apple WWDC",
+          "detail": "60 FPS 21-keypoint hand tracking"
         },
         {
           "label": "Modality",
-          "value": "Vision-to-Voice"
+          "value": "Vision-to-Voice",
+          "detail": "Real-time ISL & ASL speech synthesis"
         },
         {
           "label": "Target Sectors",
-          "value": "Transit & Health"
+          "value": "Transit & Health",
+          "detail": "100% on-device privacy-first CoreML"
         }
       ],
       "description": "Designed an end-to-end assistive communication platform utilizing computer vision, deep learning gesture recognition, and neural text-to-speech. Built to break barriers for Deaf and hard-of-hearing citizens at transit hubs, medical centers, and government offices. Selected among the Top 350 entries out of ~5,000 global applicants in the Apple WWDC Swift Student Challenge 2026.",
@@ -333,19 +349,23 @@ const PORTFOLIO_DATA = {
       "metrics": [
         {
           "label": "Inference Accuracy",
-          "value": "99.3%"
+          "value": "99.3%",
+          "detail": "Test classification on resonant spectrums"
         },
         {
           "label": "Signal Processing",
-          "value": "FFT & Wavelet"
+          "value": "FFT & Wavelet",
+          "detail": "Spectral centroid & MFCC extraction"
         },
         {
           "label": "Physics Award",
-          "value": "Alpha Science 1st"
+          "value": "Alpha Science 1st",
+          "detail": "1st Place Global Award"
         },
         {
           "label": "Collaborator",
-          "value": "Dr. M. Dash (NUS)"
+          "value": "Dr. M. Dash (NUS)",
+          "detail": "Former NUS/NTU faculty mentorship"
         }
       ],
       "description": "Originated from winning research in experimental physics analyzing acoustic resonance in enclosed containers. Shreeansh partnered with Dr. Manoranjan Dash (former NUS/NTU researcher) to transition the physical impulse-momentum model into a production ML pipeline. By extracting spectral features and energy distributions through Fast Fourier Transforms, the system predicts hidden physical parameters with 99.3% accuracy, pioneering applications in industrial quality assurance, non-destructive packaging inspection, and medical acoustics.",
@@ -378,15 +398,18 @@ const PORTFOLIO_DATA = {
       "metrics": [
         {
           "label": "Wind Tunnel Testing",
-          "value": "Calibrated"
+          "value": "Calibrated",
+          "detail": "Aerodynamic drag & velocity curves"
         },
         {
           "label": "Sensors",
-          "value": "Anemometer, MQ-135, DHT"
+          "value": "Anemometer, MQ-135, DHT",
+          "detail": "Hall Effect & optical rotary encoders"
         },
         {
           "label": "Platform",
-          "value": "Arduino & Python"
+          "value": "Arduino & Python",
+          "detail": "Real-time telemetry dashboard"
         }
       ],
       "description": "Developed during the Young Technology Scholars fellowship at Plaksha University. Engineered an integrated weather station with rotary encoders, Hall effect magnetic sensors, and particulate telemetry. Calibrated the physical apparatus inside Plaksha's engineering wind tunnel to generate empirical correction curves for velocity measurement. Showcased to faculty on Demo Day.",
@@ -412,24 +435,28 @@ const PORTFOLIO_DATA = {
       "timeline": "2026 \u2013 2027",
       "category": "ai",
       "tagline": "High-Throughput Competition & Entrepreneurship Platform Backed by NITI Aayog",
-      "badge": "NITI Aayog Backed \u2022 .5M+",
-      "summary": "A nation-wide digital competition and learning infrastructure supporting young female entrepreneurs across India, mobilizing over .5 million in capital, awards, and scholarships.",
+      "badge": "NITI Aayog Backed \u2022 $2.5M+",
+      "summary": "A nation-wide digital competition and learning infrastructure supporting young female entrepreneurs across India, mobilizing over $2.5 million in capital, awards, and scholarships.",
       "metrics": [
         {
           "label": "Reach",
-          "value": "20,000+ Young Women"
+          "value": "20,000+ Young Women",
+          "detail": "Entrepreneurs across urban & rural India"
         },
         {
           "label": "Geographic Scale",
-          "value": "25 Indian States"
+          "value": "25 Indian States",
+          "detail": "Nationwide digital infrastructure"
         },
         {
           "label": "Funding Mobilized",
-          "value": ".5M+"
+          "value": "$2.5M+",
+          "detail": "Venture capital, grants & scholarships"
         },
         {
           "label": "Endorsement",
-          "value": "NITI Aayog"
+          "value": "NITI Aayog",
+          "detail": "Recognized national policy initiative"
         }
       ],
       "description": "Serving as CTO for BizForHer, a student-led venture platform endorsed by NITI Aayog. Architected and maintained the web architecture and dedicated competition-hosting portal managing thousands of multi-round application dossiers, evaluations, and judge rubrics. Developing an intelligent AI chatbot delivering interactive pre-competition business curriculum and real-time applicant onboarding.",
@@ -840,7 +867,7 @@ const PORTFOLIO_DATA = {
       "role": "Chief Technology Officer (CTO)",
       "organization": "BizForHer",
       "period": "2026 \u2013 2027",
-      "description": "Heading end-to-end technology for an initiative endorsed by NITI Aayog supporting female entrepreneurs across 25 states. Mobilized .5M+ in scholarships, investments, and prizes; reached 20,000+ girls."
+      "description": "Heading end-to-end technology for an initiative endorsed by NITI Aayog supporting female entrepreneurs across 25 states. Mobilized $2.5M+ in scholarships, investments, and prizes; reached 20,000+ girls."
     },
     {
       "role": "Deputy House Captain",
